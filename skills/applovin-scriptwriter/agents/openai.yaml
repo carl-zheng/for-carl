@@ -1,0 +1,4 @@
+interface:
+  display_name: "AppLovin Scriptwriter"
+  short_description: "Turn approved briefs into AppLovin ecommerce scripts"
+  default_prompt: "Use $applovin-scriptwriter to turn this approved creative brief into a production-ready AppLovin ecommerce video script."

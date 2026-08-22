@@ -1,0 +1,97 @@
+{
+  "schema_version": "1.0",
+  "brief_id": "dac-us-24-mornings-v1",
+  "status": "approved_for_scriptwriting",
+  "product_truth_file": "product-truth.json",
+  "claim_boundaries_file": "claim-boundaries.md",
+  "target_market": "United States",
+  "script_language": "English (US)",
+  "concept": {
+    "name": "24 Mornings of Dino Excitement",
+    "creative_territory": "A Christmas gift that creates a new moment of anticipation every morning",
+    "audience_situation": "A parent, grandparent, or relative choosing a Christmas countdown gift for a child who loves dinosaurs.",
+    "consumer_truth": "Many gifts create one peak reaction, while a countdown ritual gives the child a reason to return every morning.",
+    "tension": "The buyer wants Christmas anticipation to feel special, but an ordinary one-time gift or disposable daily treat ends too quickly.",
+    "purchase_motivation": "Create an easy, repeatable family ritual that combines surprise, dinosaur interest, collecting, and Christmas anticipation.",
+    "primary_journey_role": "FULL-FUNNEL",
+    "secondary_journey_roles": [
+      "DESIRE",
+      "DEMONSTRATE"
+    ],
+    "big_idea": "One Christmas gift creates 24 mornings of dinosaur excitement.",
+    "dominant_memory": "24 mornings, 24 dinosaur surprises.",
+    "hook_mechanism": "Audience identification plus an emotionally recognizable open loop",
+    "illustrative_hook": "What if your child actually looked forward to every December morning?",
+    "product_role": "HERO — the calendar anchors the daily ritual",
+    "proposed_duration_seconds": {
+      "minimum": 45,
+      "maximum": 50
+    }
+  },
+  "narrative_spine": [
+    {
+      "beat": "opening",
+      "purpose": "Frame the desire for a more exciting December morning routine."
+    },
+    {
+      "beat": "product_reveal",
+      "purpose": "Introduce the 24-day dinosaur countdown calendar early as the mechanism."
+    },
+    {
+      "beat": "daily_ritual",
+      "purpose": "Show multiple numbered doors opening across different mornings."
+    },
+    {
+      "beat": "collection_growth",
+      "purpose": "Show the dinosaur collection growing and reinforce 24 different surprises."
+    },
+    {
+      "beat": "after_countdown_value",
+      "purpose": "Show continued collecting, display, play, or verified tree use after a door is opened."
+    },
+    {
+      "beat": "offer_and_action",
+      "purpose": "Present the verified current offer without fabricated urgency and invite the viewer to start the 24-day ritual."
+    }
+  ],
+  "demonstration_strategy": [
+    "Open several numbered doors with real hands and the real product.",
+    "Reveal visibly different dinosaurs from those doors.",
+    "Build a growing lineup that makes the accumulation across 24 days understandable.",
+    "Show post-reveal collecting or play; show tree hanging only after the physical mechanism is verified."
+  ],
+  "proof_strategy": {
+    "primary": "Real-product demonstration",
+    "allowed": [
+      "24 numbered doors",
+      "24 dinosaur surprises",
+      "page-stated no-repeat design",
+      "continued collecting, display, and play",
+      "verified current price and bundle structure"
+    ],
+    "excluded": [
+      "unverified review counts",
+      "unapproved testimonials",
+      "dynamic scarcity or order-volume widgets",
+      "safety, material, age, health, and developmental claims"
+    ]
+  },
+  "offer_role": {
+    "placement": "final conversion device",
+    "single_price_snapshot_usd": 35.90,
+    "free_shipping_copy": "Free standard shipping on orders $49+",
+    "return_copy": "30-day returns",
+    "launch_requirement": "Verify price, bundle savings, and destination-page wording immediately before launch."
+  },
+  "aip_continuation": "A virtual countdown door invites the viewer to tap and reveal one dinosaur, then transitions to the growing 24-dinosaur collection and the verified bundle options.",
+  "landing_page_promise": "The first product section should repeat the same 24-day, 24-dinosaur, no-repeat promise; show the same product design; and preserve the exact current price, $49 free-shipping threshold, and 30-day return period.",
+  "required_new_assets": [
+    "Real full-calendar product footage",
+    "Close-up footage opening at least three numbered doors",
+    "Footage showing several visibly different dinosaur figures",
+    "A complete 24-figure lineup or verified inventory image",
+    "Physical ornament-hanging footage if that use appears in the script"
+  ],
+  "likely_failure_mode": "The ad promises a daily emotional ritual but relies on static product renders, so the viewer never sees a convincing real reveal or accumulating collection.",
+  "cheapest_decisive_test": "Produce one real-product opening sequence and test an emotion-led hook against a fact-led '24 doors, 24 dinos' hook while holding the offer, AIP, and destination constant."
+}

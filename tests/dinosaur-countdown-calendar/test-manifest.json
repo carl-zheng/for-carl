@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0",
+  "test_id": "applovin-dinosaur-countdown-handoff-v1",
+  "status": "active",
+  "skills_under_test": [
+    "applovin-creative-director >= 0.1.1",
+    "applovin-scriptwriter >= 0.1.0"
+  ],
+  "inputs": [
+    "product-truth.json",
+    "creative-brief.json",
+    "claim-boundaries.md"
+  ],
+  "expected_outputs": [
+    "script-v1.md",
+    "script-v1.json"
+  ],
+  "invariants": [
+    "The script preserves the approved concept '24 Mornings of Dino Excitement'.",
+    "The dominant memory remains '24 mornings, 24 dinosaur surprises'.",
+    "The target duration remains 45 to 50 seconds.",
+    "Free shipping is stated only as applying to United States orders of $49 or more.",
+    "The script never implies that the $35.90 single item ships free.",
+    "The return period, when mentioned, is 30 days.",
+    "No review count, customer quotation, live order count, inventory scarcity, or countdown urgency is used.",
+    "No safety, non-toxic, age, educational, developmental, health, material, or durability claim is used.",
+    "The script contains no storyboard, shot-list, camera, editing, or generation-prompt instructions.",
+    "Every factual and commercial statement appears in the claim audit.",
+    "The Markdown and JSON spoken copy, offer, timing, and claim statuses agree."
+  ]
+}

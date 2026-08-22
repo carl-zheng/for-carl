@@ -1,0 +1,106 @@
+{
+  "schema_version": "1.0",
+  "product_id": "vexroan-dinosaur-adventure-blind-box-countdown-calendar",
+  "snapshot_date": "2026-08-23",
+  "source": {
+    "product_url": "https://vexroan.com/products/dinosaur-adventure-blind-box-countdown-calendar",
+    "market": "United States",
+    "currency": "USD"
+  },
+  "product": {
+    "name": "Dinosaur Adventure Blind-Box Countdown Calendar",
+    "category": "24-day Christmas countdown calendar with collectible dinosaur figures",
+    "core_function": "Reveals one dinosaur surprise from a numbered door each day during a 24-day countdown.",
+    "primary_benefit": "Turns the Christmas countdown into a repeatable daily dinosaur discovery ritual.",
+    "secondary_benefits": [
+      "Creates 24 separate reveal moments instead of one gift-opening moment.",
+      "The figures can remain available for collecting, display, and play after the countdown.",
+      "The product page states that the figures can be used as dinosaur-themed Christmas ornaments."
+    ],
+    "contents": {
+      "calendar_count": 1,
+      "numbered_doors": 24,
+      "dinosaur_figures": 24,
+      "page_claims_no_repeats": true
+    },
+    "current_offer_snapshot": {
+      "single": {
+        "quantity": 1,
+        "price": 35.90,
+        "compare_at_price": 69.80,
+        "free_standard_shipping": false
+      },
+      "two_pack": {
+        "quantity": 2,
+        "price": 61.80,
+        "compare_at_price": 139.60,
+        "free_standard_shipping": true
+      },
+      "three_pack": {
+        "quantity": 3,
+        "price": 87.70,
+        "compare_at_price": 209.40,
+        "free_standard_shipping": true
+      },
+      "verification_rule": "Recheck all prices and discounts immediately before launch."
+    }
+  },
+  "business_defaults": {
+    "free_standard_shipping_order_subtotal_usd": 49,
+    "return_period_days": 30,
+    "source_type": "first-party advertiser policy",
+    "override_rule": "Use a different value only when the user explicitly approves a product- or campaign-specific exception."
+  },
+  "available_assets": {
+    "static_product_images_observed": 9,
+    "product_page_copy": true,
+    "known_product_video": false,
+    "known_real_unboxing_footage": false,
+    "known_child_reaction_footage": false
+  },
+  "source_supported_claims": [
+    "24-day dinosaur countdown calendar",
+    "24 unique dinosaur surprises with no repeats",
+    "one dinosaur surprise behind each numbered door",
+    "figures remain available for collecting, display, and play after the countdown",
+    "figures are presented for use as dinosaur-themed Christmas ornaments",
+    "free standard shipping on United States orders of $49 or more",
+    "30-day return period"
+  ],
+  "audience_hypotheses": [
+    {
+      "audience": "Parents shopping for children who are strongly interested in dinosaurs",
+      "evidence_level": "D",
+      "status": "EXPERIMENT"
+    },
+    {
+      "audience": "Grandparents and relatives seeking a memorable seasonal gift",
+      "evidence_level": "D",
+      "status": "EXPERIMENT"
+    },
+    {
+      "audience": "Families seeking a non-consumable alternative to a traditional treat countdown",
+      "evidence_level": "D",
+      "status": "EXPERIMENT"
+    }
+  ],
+  "claim_gaps": [
+    "Age grading and small-parts warning",
+    "Material composition",
+    "United States toy-safety compliance documentation",
+    "Individual figure dimensions",
+    "Independent verification of all 24 figures and the no-repeat claim",
+    "Physical verification of the ornament hanging mechanism",
+    "Raw review records and testimonial usage permission"
+  ],
+  "forbidden_until_verified": [
+    "safe",
+    "non-toxic",
+    "suitable for a specific age",
+    "educational or developmental outcome claims",
+    "verified popularity, sales-volume, scarcity, or live-order claims",
+    "customer quotations or review-count claims",
+    "health comparisons with chocolate or candy",
+    "durability or quality-superiority claims"
+  ]
+}
