@@ -1,0 +1,151 @@
+{
+  "schema_version": "0.1",
+  "profile_id": "kreadoai-seedance-mcp",
+  "profile_version": "0.1.0",
+  "provider": "KreadoAI",
+  "binding_status": "PENDING_API_KEY",
+  "verification_status": "ENDPOINT_REACHABLE_AUTH_NOT_VERIFIED",
+  "documentation_source": "KreadoAI MCP技术文档.zip",
+  "connection": {
+    "mode": "MCP_HTTP",
+    "endpoint": "https://api.kreadoai.com/mcp/agentart/v1/mcp",
+    "endpoint_reachability": {
+      "checked_at": "2026-08-23",
+      "method": "HEAD_WITHOUT_CREDENTIAL",
+      "http_status": 200
+    },
+    "authentication": {
+      "type": "HTTP_HEADER",
+      "header_name": "apiToken",
+      "secret_env": "KREADOAI_API_TOKEN",
+      "persist_secret_in_repository": false
+    },
+    "authenticated_mcp_initialization": "PENDING_API_KEY",
+    "initial_read_only_verification": {
+      "tool": "list_seedance_builtin_virtual_character_labels",
+      "purpose": "Verify authenticated read-only tool access without creating media or reading private account details.",
+      "creates_remote_task": false,
+      "billing_effect": "NOT_DOCUMENTED_NO_GENERATION_TASK_SUBMITTED"
+    }
+  },
+  "seedance": {
+    "submission_tools": {
+      "text_to_video": "submit_seedance_text_to_video",
+      "with_references": "submit_seedance_video_with_references",
+      "first_last_frame": "submit_seedance_first_last_video"
+    },
+    "models": [
+      {
+        "id": "Doubao-seedance-2",
+        "resolutions": ["480P", "720P", "1080P", "4K"]
+      },
+      {
+        "id": "Doubao-seedance-fast-2",
+        "resolutions": ["480P", "720P"]
+      },
+      {
+        "id": "Doubao-seedance-mini-2",
+        "resolutions": ["480P", "720P"]
+      }
+    ],
+    "model_selection": "UNBOUND",
+    "resolution_selection": "UNBOUND",
+    "ratio_selection": "UNBOUND",
+    "clip_duration_seconds": {
+      "minimum": 4,
+      "maximum": 15,
+      "integer_only": true
+    },
+    "supported_ratios": ["16:9", "9:16", "4:3", "1:1", "3:4", "21:9"],
+    "generate_count": {
+      "minimum": 1,
+      "maximum": 4,
+      "documented_default": 1,
+      "cost_scales_with_count": true
+    },
+    "audio": {
+      "documented_default": true,
+      "reference_audio_forces_generate_audio": true
+    },
+    "web_search": {
+      "supported_only_by": "submit_seedance_text_to_video",
+      "documented_default": false
+    },
+    "reference_limits": {
+      "images_max": 9,
+      "videos_max": 3,
+      "videos_total_duration_seconds_max": 15,
+      "audios_max": 3,
+      "audios_total_duration_seconds_max": 15,
+      "all_reference_items_max": 12,
+      "at_least_one_reference_required_for_reference_mode": true,
+      "multimodal_prompt_requires_indexed_at_reference": true
+    }
+  },
+  "polling": {
+    "video": {
+      "tool": "batch_get_video_generation_detail",
+      "interval_seconds": { "minimum": 10, "maximum": 30 },
+      "status_actions": {
+        "1": "CONTINUE_POLLING",
+        "2": "SUCCESS_READ_VIDEO_URL",
+        "3": "STOP_AND_READ_ERROR",
+        "4": "STOP_AND_READ_ERROR"
+      },
+      "automatic_resubmission": false
+    },
+    "private_asset": {
+      "tool": "get_seedance_asset_library_asset_detail",
+      "first_poll_within_seconds": 300,
+      "subsequent_interval_seconds": { "minimum": 5, "maximum": 10 },
+      "terminal_statuses": ["Active", "Failed", "Timeout"],
+      "must_poll_each_platform_asset_id": true,
+      "list_tool_must_not_replace_detail_polling": true
+    }
+  },
+  "approval_policy": {
+    "initial_enabled_tools": ["list_seedance_builtin_virtual_character_labels"],
+    "default_tool_approval_mode": "prompt",
+    "disabled_tools": ["delete_seedance_asset_library_assets"],
+    "pricing": "NOT_DOCUMENTED_DO_NOT_INVENT",
+    "media_submission_requires_explicit_user_approval": true,
+    "asset_upload_requires_explicit_user_approval": true,
+    "web_crawl_requires_explicit_user_approval": true,
+    "account_private_data_requires_explicit_user_request": true,
+    "generate_count_above_one_requires_separate_approval": true,
+    "failed_task_resubmission_requires_separate_approval": true,
+    "approved_task_polling_requires_repeat_approval": false
+  },
+  "neutral_job_mapping": {
+    "source_handoff": "tests/dinosaur-countdown-calendar/production-handoff-v1.json",
+    "status": "PENDING_AUTHENTICATED_SCHEMA_VERIFICATION",
+    "rules": [
+      {
+        "when": "No source reference is required",
+        "candidate_tool": "submit_seedance_text_to_video"
+      },
+      {
+        "when": "One or more image, video, or audio references are required",
+        "candidate_tool": "submit_seedance_video_with_references"
+      },
+      {
+        "when": "Both an approved first frame and last frame are supplied",
+        "candidate_tool": "submit_seedance_first_last_video"
+      }
+    ],
+    "constraints": [
+      "Bind model, resolution, ratio, and audio behavior only after live schema verification and user approval.",
+      "Adapt provider jobs to the 4–15 second clip limit without changing the approved final timeline.",
+      "The current three-second JOB-01 requires a four-second-or-longer generation followed by an editor trim, or an approved job regrouping.",
+      "Keep price, shipping, returns, CTA, logo, subtitles, and other exact text editor-owned.",
+      "Translate neutral asset IDs into normal, virtual_character, or Active asset_library inputs only after access is verified.",
+      "Do not change storyboard, copy, claims, offer, or timing during platform binding."
+    ]
+  },
+  "documented_unknowns": [
+    "Exact pricing and unified concurrency limits are not supplied.",
+    "The text-to-video ratio field is described both as required and as optional with adaptive behavior; verify the live schema.",
+    "get_ai_ad_creative_batch_image_detail is described for two advertising-image flows; verify task identifiers in the live schema.",
+    "Output URL lifetime and credential rotation behavior are not supplied."
+  ]
+}

@@ -10,9 +10,13 @@ Reusable Codex skills and supporting resources.
 
 ## Workflow
 
-`Product Truth → Creative Director → Creative Brief → Scriptwriter → Script → Storyboard Director → Platform Binding → Video Producer`
+`Product Truth → Creative Director → Creative Brief → Scriptwriter → Script → Storyboard Director → KreadoAI Platform Binding → Video Producer`
 
 The Creative Director owns the advertising idea and evidence boundaries. The Scriptwriter preserves that approved strategy while converting it into spoken copy and timed narrative beats. The Storyboard Director turns the locked script into visual shots, asset requirements, continuity, and provider-neutral job units. The user's existing video-production platform is bound afterward through a separate adapter, so platform limits do not silently rewrite the approved creative.
+
+## Integrations
+
+- [`kreadoai`](integrations/kreadoai/) — no-secret MCP connection and Seedance capability profile. The endpoint is reachable; authenticated tool discovery remains pending the user's API key.
 
 For this advertiser's portfolio, content explicitly published on an advertiser-controlled product detail page is approved first-party advertising input. Recognizable subjective or metaphorical advertising exaggeration is also allowed; objective facts must still come from the product page or an explicit user-approved input.
 

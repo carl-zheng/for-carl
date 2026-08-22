@@ -2,6 +2,14 @@
 
 All notable changes to this repository are documented here.
 
+## KreadoAI connection scaffold 0.1.0 — 2026-08-23
+
+- Added a no-secret KreadoAI MCP platform profile for the user's selected video-production provider.
+- Registered the custom `apiToken` header through the local `KREADOAI_API_TOKEN` environment-variable binding; no credential is stored in the repository.
+- Recorded Seedance models, resolution and ratio support, 4–15 second clip limits, reference limits, polling rules, and unknown pricing as documented but not yet authenticated.
+- Limited the first connection test to one read-only public-label query and kept media submission, account data, remote writes, resubmission, and deletion behind explicit approval or disabled.
+- Verified that the MCP endpoint is reachable without using a credential; authenticated initialization remains pending the API key.
+
 ## Storyboard Director 0.1.0 — 2026-08-23
 
 - Added the experimental `applovin-storyboard-director` skill for converting approved scripts into timed visual shot plans, asset maps, continuity locks, and production handoffs.
