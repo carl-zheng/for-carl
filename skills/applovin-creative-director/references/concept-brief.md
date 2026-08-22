@@ -7,6 +7,8 @@ Use the lightest output that answers the user's request. For a normal multi-conc
 - Known product truth
 - Audience evidence
 - Offer and approved claims
+- `PAGE-CLEARED` product-detail-page claims
+- `PUFFERY` opportunities that intensify the approved benefit without creating a measurable fact
 - Available visual proof
 - Material assumptions
 - `CLAIM REQUIRED` items

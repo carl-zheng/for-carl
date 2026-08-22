@@ -2,7 +2,7 @@
 name: applovin-scriptwriter
 description: Write claim-safe AppLovin ecommerce video scripts from an approved Creative Brief. Use after strategy, audience, product truth, proof, offer, duration, AIP, and landing promise are defined; do not use to choose the creative strategy, invent claims, create storyboards, shot lists, generation prompts, or final media.
 metadata:
-  version: 0.1.0
+  version: 0.1.1
   status: experimental
 ---
 
@@ -26,7 +26,7 @@ Require one approved Creative Brief plus its Product Truth and claim boundaries.
 - hook mechanism and product role
 - narrative spine
 - demonstration and proof strategy
-- allowed, conditional, missing, and forbidden claims
+- page-cleared, user-approved, puffery, conditional, missing, and forbidden claims
 - offer role and current verified offer
 - target duration
 - AIP continuation and landing-page promise
@@ -39,8 +39,10 @@ If a material element is missing or multiple concepts remain unresolved, output 
 - Write natural, speakable language for the specified market. For United States scripts, default to conversational US English without forced slang.
 - The hook must be repaid by the body. Do not use a sensational opening that the product, proof, and offer cannot support.
 - Let visible proof carry persuasion when possible. Narration should clarify what the viewer can verify, not claim more than the demonstration shows.
-- Never write fictional first-person customer experiences, implied testimonials, fabricated reactions, fake authority, urgency, scarcity, popularity, or performance results.
-- Use only claims marked for use. Omit `CLAIM REQUIRED`, `PROOF GAP`, conditional, or forbidden claims until their conditions are satisfied.
+- Treat content explicitly published on the advertiser-controlled product detail page as `PAGE-CLEARED` first-party advertising input. Page-published reviews, quotations, counts, social proof, urgency, scarcity, and performance statements may be used when Product Truth records them; copy their meaning faithfully and recheck dynamic values before launch.
+- Allow recognizable `PUFFERY`: subjective, emotional, playful, or metaphorical language that intensifies an approved benefit without creating a new measurable fact.
+- Never fabricate a customer, quotation, reaction, authority, count, event, offer, product capability, or other objective fact that is absent from both the product page and explicit user-approved inputs.
+- Use claims marked `PAGE-CLEARED`, `USER-APPROVED`, `USE`, or `PUFFERY`. Omit `CLAIM REQUIRED`, unresolved `PROOF GAP`, conditional, or forbidden claims until their conditions are satisfied.
 - Use exact offer and policy values from the approved brief. If price, discount, shipping, returns, AIP, or landing-page information conflicts, output `OFFER CONFLICT` and identify the mismatch.
 - Treat duration as a constraint on persuasion, not a reason to pad. As a starting estimate, allow roughly 2.1–2.4 spoken words per second, then reduce the word budget for pauses, reactions, demonstrations, or dialogue. Verify with a read-through.
 - Keep on-screen copy shorter than voiceover and avoid duplicating every spoken line.
@@ -62,7 +64,7 @@ Write voiceover or dialogue that sounds natural when spoken. Add on-screen copy 
 
 ### 4. Audit claims and continuity
 
-Check every factual sentence against Product Truth and claim boundaries. Confirm that offer wording and CTA can continue unchanged into AIP and the landing page.
+Classify every material line as page-cleared, user-approved, puffery, or unsupported. Check factual sentences against Product Truth and claim boundaries. Confirm that offer wording and CTA can continue unchanged into AIP and the landing page.
 
 ### 5. Deliver the script
 
@@ -76,7 +78,7 @@ Before finalizing, confirm:
 - the product and mechanism enter naturally enough to repay the hook
 - the body contains real persuasion rather than repeated Hook copy
 - the dominant memory remains clear
-- every important claim is allowed and supportable
+- every important line is page-cleared, user-approved, recognizable puffery, or otherwise supportable
 - the offer is exact and current according to the supplied brief
 - estimated speech plus visual pauses fits the duration
 - the CTA continues into the specified AIP and landing promise

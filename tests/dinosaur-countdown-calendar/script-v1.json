@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "script_lock": {
     "script_id": "dac-us-24-mornings-script-v1",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "approved_concept": "24 Mornings of Dino Excitement",
     "target_market": "United States",
     "language": "English (US)",
@@ -13,8 +13,9 @@
     "dominant_memory": "24 mornings, 24 dinosaur surprises.",
     "allowed_proof": [
       "A 24-day calendar with 24 numbered doors",
-      "One dinosaur surprise behind each numbered door",
+      "24 unique dinosaur surprises with no repeats",
       "The dinosaurs remain available for collecting, display, and play",
+      "The figures can be used as dinosaur-themed Christmas ornaments",
       "Verified offer and policy language"
     ],
     "offer_snapshot": {
@@ -24,10 +25,9 @@
       "verification_requirement": "Recheck price, bundle savings, and destination wording immediately before launch."
     },
     "claims_excluded": [
-      "Unique or no-repeat wording pending physical verification",
-      "Ornament use pending physical verification",
-      "Reviews and testimonials",
-      "Safety, material, age, health, educational, durability, quality, popularity, scarcity, and sales-volume claims"
+      "Objective facts absent from both the product page and explicit user-approved inputs",
+      "Fabricated customers, quotations, reactions, counts, or live events",
+      "Dynamic page values that have not been rechecked before launch"
     ]
   },
   "beats": [
@@ -38,10 +38,10 @@
         "end": 6
       },
       "purpose": "Frame a more exciting December morning routine.",
-      "voiceover_dialogue": "What if December mornings came with a dinosaur surprise?",
-      "on_screen_copy": "A dinosaur surprise every morning",
+      "voiceover_dialogue": "What if every December morning could roar with dinosaur excitement?",
+      "on_screen_copy": "Make December roar",
       "demonstration_dependency": "The product must visibly support a repeatable daily reveal.",
-      "evidence_note": "Approved audience tension and Product Truth primary benefit."
+      "evidence_note": "PUFFERY — a playful metaphor amplifying the approved dinosaur-excitement benefit without creating a measurable fact."
     },
     {
       "beat": "product_reveal",
@@ -62,10 +62,10 @@
         "end": 23
       },
       "purpose": "Explain the repeatable action.",
-      "voiceover_dialogue": "Open one numbered door each day, and discover one dinosaur waiting inside.",
-      "on_screen_copy": "Open one door each day",
-      "demonstration_dependency": "Real-product demonstration must verify a dinosaur behind each opened door.",
-      "evidence_note": "Product Truth source-supported claim: one dinosaur surprise behind each numbered door."
+      "voiceover_dialogue": "Open one numbered door each day and discover a unique dinosaur waiting inside—24 surprises, no repeats.",
+      "on_screen_copy": "24 unique dinosaurs · No repeats",
+      "demonstration_dependency": "Use the real product or page-consistent product visuals to show the daily reveal.",
+      "evidence_note": "PAGE-CLEARED — the product detail page states 24 unique dinosaur surprises with no repeats."
     },
     {
       "beat": "collection_growth",
@@ -74,10 +74,10 @@
         "end": 31
       },
       "purpose": "Reinforce accumulation across the countdown.",
-      "voiceover_dialogue": "Morning by morning, the collection grows—one surprise at a time, all the way to day twenty-four.",
+      "voiceover_dialogue": "Morning by morning, the collection grows, all the way to day twenty-four.",
       "on_screen_copy": "24 mornings. 24 dinosaur surprises.",
-      "demonstration_dependency": "Several reveals and a growing real-product collection must make the accumulation understandable.",
-      "evidence_note": "Product Truth: 24-day countdown and 24 dinosaur figures. No unique or no-repeat claim is made."
+      "demonstration_dependency": "Several reveals and a growing product-page-consistent collection should make the accumulation understandable.",
+      "evidence_note": "PAGE-CLEARED — Product Truth records a 24-day countdown and 24 dinosaur figures."
     },
     {
       "beat": "after_countdown_value",
@@ -86,10 +86,10 @@
         "end": 38
       },
       "purpose": "Show that value continues after each reveal.",
-      "voiceover_dialogue": "And after the countdown, the dinosaurs are still ready for collecting, display, and play.",
-      "on_screen_copy": "Collect. Display. Play.",
-      "demonstration_dependency": "Real figures must visibly remain usable for the named purposes.",
-      "evidence_note": "Product Truth product.secondary_benefits; ornament use is intentionally omitted."
+      "voiceover_dialogue": "After the countdown, collect them, display them, play with them, or hang them as dinosaur Christmas ornaments.",
+      "on_screen_copy": "Collect · Display · Play · Hang",
+      "demonstration_dependency": "Use the product-page ornament visual or faithful real-product footage if this use is shown on screen.",
+      "evidence_note": "PAGE-CLEARED — the product page presents collecting, display, play, and dinosaur-themed Christmas ornament use."
     },
     {
       "beat": "offer_and_action",
@@ -98,24 +98,24 @@
         "end": 50
       },
       "purpose": "State the verified commercial terms and continue into AIP.",
-      "voiceover_dialogue": "One calendar is $35.90. Free standard shipping on orders $49+. Plus, 30-day returns. Tap a door, reveal a dinosaur, and start 24 mornings of excitement.",
+      "voiceover_dialogue": "One calendar is $35.90. Free standard shipping on orders $49+. Plus, 30-day returns. Tap a door, reveal a dinosaur, and make December roar.",
       "on_screen_copy": "$35.90 each · Free standard shipping on orders $49+ · 30-day returns",
       "demonstration_dependency": "The interactive continuation must let the viewer tap a countdown door and reveal one dinosaur before continuing to the collection and offer.",
       "evidence_note": "Product Truth current offer snapshot and business defaults; Creative Brief AIP continuation. Price and destination wording require launch-day verification."
     }
   ],
-  "clean_read_through": "What if December mornings came with a dinosaur surprise?\n\nThe Dinosaur Adventure Countdown Calendar turns one Christmas gift into a 24-day ritual.\n\nOpen one numbered door each day, and discover one dinosaur waiting inside.\n\nMorning by morning, the collection grows—one surprise at a time, all the way to day twenty-four.\n\nAnd after the countdown, the dinosaurs are still ready for collecting, display, and play.\n\nOne calendar is $35.90. Free standard shipping on orders $49+. Plus, 30-day returns. Tap a door, reveal a dinosaur, and start 24 mornings of excitement.",
+  "clean_read_through": "What if every December morning could roar with dinosaur excitement?\n\nThe Dinosaur Adventure Countdown Calendar turns one Christmas gift into a 24-day ritual.\n\nOpen one numbered door each day and discover a unique dinosaur waiting inside—24 surprises, no repeats.\n\nMorning by morning, the collection grows, all the way to day twenty-four.\n\nAfter the countdown, collect them, display them, play with them, or hang them as dinosaur Christmas ornaments.\n\nOne calendar is $35.90. Free standard shipping on orders $49+. Plus, 30-day returns. Tap a door, reveal a dinosaur, and make December roar.",
   "timing_estimate": {
-    "spoken_word_count": 90,
+    "spoken_word_count": 92,
     "target_duration_seconds": {
       "minimum": 45,
       "maximum": 50
     },
     "assumed_spoken_words_per_minute_before_pauses": 140,
-    "estimated_speech_seconds": 38.6,
+    "estimated_speech_seconds": 39.4,
     "planned_pause_allowance_seconds": {
-      "minimum": 6.4,
-      "maximum": 11.4
+      "minimum": 5.6,
+      "maximum": 10.6
     },
     "planned_pause_uses": [
       "product reveals",
@@ -127,9 +127,9 @@
   },
   "claim_offer_audit": [
     {
-      "script_wording": "a dinosaur surprise",
-      "support": "Product Truth: one dinosaur surprise behind each numbered door; does not assert uniqueness",
-      "status": "CLEARED"
+      "script_wording": "roar with dinosaur excitement / make December roar",
+      "support": "Recognizable playful metaphor amplifying the approved dinosaur theme; it creates no measurable product fact",
+      "status": "PUFFERY"
     },
     {
       "script_wording": "one Christmas gift into a 24-day ritual",
@@ -138,23 +138,28 @@
     },
     {
       "script_wording": "Open one numbered door each day",
-      "support": "Product Truth core function and 24 numbered doors",
-      "status": "CLEARED"
+      "support": "Product-detail-page description and Product Truth core function",
+      "status": "PAGE-CLEARED"
     },
     {
-      "script_wording": "one dinosaur waiting inside",
-      "support": "Source-supported claim: one dinosaur surprise behind each numbered door",
-      "status": "CLEARED"
+      "script_wording": "a unique dinosaur waiting inside—24 surprises, no repeats",
+      "support": "Product-detail-page claim recorded in Product Truth",
+      "status": "PAGE-CLEARED"
     },
     {
       "script_wording": "the collection grows … all the way to day twenty-four",
       "support": "Product Truth: 24-day countdown and 24 dinosaur figures",
-      "status": "CLEARED"
+      "status": "PAGE-CLEARED"
     },
     {
-      "script_wording": "collecting, display, and play",
-      "support": "Product Truth secondary benefit and source-supported claims",
-      "status": "CLEARED"
+      "script_wording": "collect them, display them, play with them",
+      "support": "Product-detail-page benefits recorded in Product Truth",
+      "status": "PAGE-CLEARED"
+    },
+    {
+      "script_wording": "hang them as dinosaur Christmas ornaments",
+      "support": "Product-detail-page ornament-use claim recorded in Product Truth",
+      "status": "PAGE-CLEARED"
     },
     {
       "script_wording": "One calendar is $35.90",
@@ -178,9 +183,9 @@
     }
   ],
   "downstream_handoff": [
-    "Supply real full-calendar footage and real opening footage for at least three numbered doors.",
-    "Supply visibly different real dinosaur figures and a growing collection view; a complete 24-figure lineup or verified inventory image remains required for full day-24 continuity.",
-    "Recheck the $35.90 price, bundle savings, free-shipping threshold, return wording, and destination-page copy immediately before launch.",
-    "Keep unique/no-repeat and ornament claims out until their stated physical-verification conditions are satisfied."
+    "Use existing product-page assets or supply real full-calendar and door-opening footage; real footage is a persuasion upgrade, not a permission gate for page-cleared claims.",
+    "Use a page-consistent 24-figure lineup or growing collection view to support visual continuity.",
+    "Use the existing product-page ornament visual or faithful real-product footage for the ornament beat.",
+    "Recheck the $35.90 price, bundle savings, free-shipping threshold, return wording, and any dynamic page content immediately before launch."
   ]
 }

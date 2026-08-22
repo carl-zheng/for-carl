@@ -13,6 +13,8 @@ Reusable Codex skills and supporting resources.
 
 The Creative Director owns the advertising idea and evidence boundaries. The Scriptwriter preserves that approved strategy while converting it into spoken copy and timed narrative beats; it does not invent a new concept or create storyboards, shots, or generation prompts.
 
+For this advertiser's portfolio, content explicitly published on an advertiser-controlled product detail page is approved first-party advertising input. Recognizable subjective or metaphorical advertising exaggeration is also allowed; objective facts must still come from the product page or an explicit user-approved input.
+
 ## Regression tests
 
 - [`dinosaur-countdown-calendar`](tests/dinosaur-countdown-calendar/) — first complete Product Truth → Creative Brief → Script handoff test for the United States market, with Markdown and JSON artifacts plus explicit claim and offer invariants.

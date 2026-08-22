@@ -50,7 +50,9 @@ List each material factual or commercial statement with:
 
 - script wording
 - supporting Product Truth field or policy
-- status: `CLEARED`, `VERIFY BEFORE LAUNCH`, or `REMOVE`
+- status: `CLEARED`, `PAGE-CLEARED`, `PUFFERY`, `VERIFY BEFORE LAUNCH`, or `REMOVE`
+
+Use `PAGE-CLEARED` for claims explicitly published on the advertiser-controlled product page. Use `PUFFERY` only for recognizable subjective or metaphorical language that does not assert a new measurable fact. Dynamic page values should normally be `VERIFY BEFORE LAUNCH` even though the source is page-cleared.
 
 Any `REMOVE` item must be removed before delivery. If removal breaks the concept, return `BRIEF REVISION REQUIRED`.
 

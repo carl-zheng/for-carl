@@ -20,6 +20,12 @@ Supported by the advertiser's product documentation, approved claims, customer r
 - Use: default source for product truth and account-specific decisions.
 - Caution: distinguish correlation from causation and Creative Set results from asset-level results.
 
+#### Product-detail-page approval
+
+For this advertiser's portfolio, any content explicitly published on an advertiser-controlled product detail page is approved Level B input for advertising. Mark it `PAGE-CLEARED`; preserve material qualifications and source scope. Independent physical verification is not an additional permission gate.
+
+Dynamic page content—such as price, discount, review count, inventory, recent-order activity, or timers—can also be used when captured from the page, but record the snapshot and recheck the live value immediately before launch.
+
 ### C — Practitioner
 
 Supported by agencies, media buyers, operators, case observations, or third-party field reports.
@@ -56,9 +62,15 @@ For each material claim, record:
 - evidence level
 - source or source type
 - confidence
-- status: `USE`, `TEST PRIORITY`, `EXPERIMENT`, `CLAIM REQUIRED`, or `PROOF GAP`
+- status: `PAGE-CLEARED`, `USER-APPROVED`, `USE`, `PUFFERY`, `TEST PRIORITY`, `EXPERIMENT`, `CLAIM REQUIRED`, or `PROOF GAP`
 
 Do not convert an observed pattern into a causal rule. Do not use a third-party statistic merely because it sounds precise. Never cite a source as supporting a stronger statement than it actually makes.
+
+## Creative puffery
+
+`PUFFERY` is recognizable subjective, emotional, playful, or metaphorical advertising language rather than a measurable product assertion. It may intensify the feeling of a page-cleared benefit—for example, making December “roar with excitement”—without creating a new quantity, safety result, guarantee, or other objective fact.
+
+If a reasonable viewer could verify the statement as true or false, treat it as an objective claim rather than puffery and require product-page or user-approved support.
 
 ## Testing rule
 

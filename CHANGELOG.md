@@ -2,6 +2,13 @@
 
 All notable changes to this repository are documented here.
 
+## Director 0.1.2 / Scriptwriter 0.1.1 — 2026-08-23
+
+- Made advertiser-controlled product-detail-page content `PAGE-CLEARED` for advertising without an additional physical-verification gate.
+- Added `PUFFERY` for recognizable subjective, emotional, playful, or metaphorical exaggeration while keeping new objective facts source-bound.
+- Updated the dinosaur regression fixture and script to exercise the page-cleared no-repeat and ornament claims plus the “make December roar” puffery line.
+- Kept dynamic page values subject to a launch-time recheck and prohibited fabricated customers, quotations, counts, events, and other unsupported objective facts.
+
 ## Scriptwriter 0.1.0 — 2026-08-23
 
 - Added the experimental `applovin-scriptwriter` skill for converting one approved Creative Brief into a timed, claim-safe video script.

@@ -1,10 +1,10 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "test_id": "applovin-dinosaur-countdown-handoff-v1",
   "status": "active",
   "skills_under_test": [
-    "applovin-creative-director >= 0.1.1",
-    "applovin-scriptwriter >= 0.1.0"
+    "applovin-creative-director >= 0.1.2",
+    "applovin-scriptwriter >= 0.1.1"
   ],
   "inputs": [
     "product-truth.json",
@@ -22,8 +22,11 @@
     "Free shipping is stated only as applying to United States orders of $49 or more.",
     "The script never implies that the $35.90 single item ships free.",
     "The return period, when mentioned, is 30 days.",
-    "No review count, customer quotation, live order count, inventory scarcity, or countdown urgency is used.",
-    "No safety, non-toxic, age, educational, developmental, health, material, or durability claim is used.",
+    "Claims explicitly published on the advertiser-controlled product detail page are PAGE-CLEARED and do not require an additional physical-verification gate.",
+    "Recognizable subjective, playful, emotional, or metaphorical exaggeration is allowed as PUFFERY when it creates no new measurable fact.",
+    "Any review, quotation, live order count, inventory, scarcity, timer, price, or other dynamic page value must trace to a saved page snapshot and be rechecked immediately before launch.",
+    "No objective fact absent from both the product page and explicit user-approved inputs is invented.",
+    "The script exercises the policy by using the page-cleared no-repeat and ornament claims plus the puffery phrase 'make December roar'.",
     "The script contains no storyboard, shot-list, camera, editing, or generation-prompt instructions.",
     "Every factual and commercial statement appears in the claim audit.",
     "The Markdown and JSON spoken copy, offer, timing, and claim statuses agree."

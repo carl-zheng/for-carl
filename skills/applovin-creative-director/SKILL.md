@@ -2,7 +2,7 @@
 name: applovin-creative-director
 description: Develop evidence-grounded AppLovin ecommerce video concepts before scriptwriting or production. Use for audience insight, creative territories, big ideas, hook mechanisms, long-form concepts, demonstrations, proof, offers, Creative Set themes, and video-to-AIP-to-landing-page continuity; do not use for final scripts, storyboards, shot prompts, or video generation.
 metadata:
-  version: 0.1.1
+  version: 0.1.2
   status: experimental
 ---
 
@@ -18,9 +18,10 @@ Do not produce final scripts, scene-by-scene dialogue, shot lists, cinematograph
 
 ## Operating principles
 
-- Ground before ideating. Separate known facts, evidence, assumptions, and missing inputs.
-- Never invent product capabilities, testimonials, review counts, sales volume, clinical outcomes, statistics, certifications, endorsements, discounts, urgency, scarcity, guarantees, or competitor weaknesses.
-- Label an attractive but unsupported claim `CLAIM REQUIRED`. Label missing proof `PROOF GAP` and state what must be collected.
+- Ground before ideating. Separate known facts, page-cleared claims, user-approved facts, creative puffery, assumptions, and missing inputs.
+- Treat any claim, visual, offer, review, social-proof element, or other content explicitly published on the advertiser-controlled product detail page as Level B first-party input and `PAGE-CLEARED` for advertising by default. Preserve material qualifications, record the page snapshot, and recheck dynamic values before launch; do not demand independent physical verification solely because the claim came from the page.
+- Allow recognizable creative puffery: subjective, emotional, playful, or metaphorical language that a reasonable viewer would not read as a new measurable product fact. Label it `PUFFERY`.
+- Never invent a new objective fact that is absent from both the product page and explicit user-approved inputs. Label an attractive but unsupported objective claim `CLAIM REQUIRED`. Label missing production evidence `PROOF GAP` and state what must be collected.
 - Favor concepts with enough substance to earn belief and purchase intent after the hook.
 - Treat 35–60 seconds as the V0.1 working range for primary AppLovin ecommerce concepts, with 40–55 seconds as a useful center when the persuasion burden warrants it. This is a creative operating default, not a hard platform specification. Never stretch a weak idea to meet a duration.
 - Prefer one dominant memory per creative. Secondary benefits must reinforce it.
@@ -41,6 +42,8 @@ Create a compact Product Truth from the material supplied or available:
 - available proof and reviews
 - approved and forbidden claims
 - visual assets and target market
+
+Capture advertiser-controlled product-page content as `PAGE-CLEARED`, including exact page wording, images, offers, reviews, and dynamic social-proof or urgency values. Dynamic values remain usable but require a launch-time page check. Distinguish missing demonstration assets from claim permission: a page-cleared claim can be written even when new footage would make the ad more persuasive.
 
 For products in the user's current ecommerce portfolio, read [references/business-defaults.md](references/business-defaults.md) and use those policies when the product input does not provide an explicit approved exception.
 
@@ -81,7 +84,7 @@ Reject or downgrade a concept when:
 
 - the insight is generic or unsupported
 - the hook is stronger than the underlying idea
-- the product cannot prove the promise
+- neither the product page nor approved evidence supports the objective promise
 - the story lacks depth after the opening
 - the product enters unnaturally or too late
 - the proof or offer is fabricated, weak, or irrelevant

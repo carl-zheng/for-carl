@@ -1,11 +1,16 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "brief_id": "dac-us-24-mornings-v1",
   "status": "approved_for_scriptwriting",
   "product_truth_file": "product-truth.json",
   "claim_boundaries_file": "claim-boundaries.md",
   "target_market": "United States",
   "script_language": "English (US)",
+  "claim_policy": {
+    "product_detail_page": "PAGE-CLEARED — product-page claims, visuals, offers, reviews, and social proof may be advertised without an additional physical-verification gate; dynamic values require a launch-time recheck.",
+    "creative_exaggeration": "PUFFERY — subjective, playful, emotional, and metaphorical amplification is allowed when it does not create a new measurable fact.",
+    "objective_fact_boundary": "Do not invent or alter objective facts absent from both the product page and explicit user-approved inputs."
+  },
   "concept": {
     "name": "24 Mornings of Dino Excitement",
     "creative_territory": "A Christmas gift that creates a new moment of anticipation every morning",
@@ -47,7 +52,7 @@
     },
     {
       "beat": "after_countdown_value",
-      "purpose": "Show continued collecting, display, play, or verified tree use after a door is opened."
+      "purpose": "Show continued collecting, display, play, or dinosaur-themed Christmas ornament use after a door is opened."
     },
     {
       "beat": "offer_and_action",
@@ -58,22 +63,22 @@
     "Open several numbered doors with real hands and the real product.",
     "Reveal visibly different dinosaurs from those doors.",
     "Build a growing lineup that makes the accumulation across 24 days understandable.",
-    "Show post-reveal collecting or play; show tree hanging only after the physical mechanism is verified."
+    "Show post-reveal collecting, play, or dinosaur-themed Christmas ornament use using page-consistent visuals."
   ],
   "proof_strategy": {
     "primary": "Real-product demonstration",
     "allowed": [
       "24 numbered doors",
-      "24 dinosaur surprises",
-      "page-stated no-repeat design",
+      "24 unique dinosaur surprises with no repeats",
       "continued collecting, display, and play",
+      "dinosaur-themed Christmas ornament use",
+      "product-page reviews and social proof when copied faithfully and rechecked if dynamic",
       "verified current price and bundle structure"
     ],
     "excluded": [
-      "unverified review counts",
-      "unapproved testimonials",
-      "dynamic scarcity or order-volume widgets",
-      "safety, material, age, health, and developmental claims"
+      "fabricated customers, quotations, counts, reactions, or live events",
+      "objective facts absent from both the product page and user-approved inputs",
+      "puffery phrased as a measurable safety, health, performance, or result guarantee"
     ]
   },
   "offer_role": {
@@ -89,8 +94,8 @@
     "Real full-calendar product footage",
     "Close-up footage opening at least three numbered doors",
     "Footage showing several visibly different dinosaur figures",
-    "A complete 24-figure lineup or verified inventory image",
-    "Physical ornament-hanging footage if that use appears in the script"
+    "A complete 24-figure lineup or page-consistent inventory image",
+    "Existing product-page ornament imagery or new ornament-hanging footage if that use appears visually"
   ],
   "likely_failure_mode": "The ad promises a daily emotional ritual but relies on static product renders, so the viewer never sees a convincing real reveal or accumulating collection.",
   "cheapest_decisive_test": "Produce one real-product opening sequence and test an emotion-led hook against a fact-led '24 doors, 24 dinos' hook while holding the offer, AIP, and destination constant."
