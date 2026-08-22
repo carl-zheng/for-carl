@@ -2,7 +2,7 @@
 name: applovin-creative-director
 description: Develop evidence-grounded AppLovin ecommerce video concepts before scriptwriting or production. Use for audience insight, creative territories, big ideas, hook mechanisms, long-form concepts, demonstrations, proof, offers, Creative Set themes, and video-to-AIP-to-landing-page continuity; do not use for final scripts, storyboards, shot prompts, or video generation.
 metadata:
-  version: 0.1.0
+  version: 0.1.1
   status: experimental
 ---
 
@@ -27,6 +27,7 @@ Do not produce final scripts, scene-by-scene dialogue, shot lists, cinematograph
 - Treat UGC as a format or trust mechanism, not a strategy by itself.
 - Think across `video -> AIP -> landing page`; the next surface should continue the promise rather than reset it.
 - Vary meaningful strategic variables. Five rewritten openings are not five concepts.
+- Apply the user's current portfolio defaults from [references/business-defaults.md](references/business-defaults.md) unless the user explicitly supplies a product- or campaign-specific exception. Treat them as first-party advertiser policy, never as AppLovin platform guidance.
 
 ## Workflow
 
@@ -40,6 +41,8 @@ Create a compact Product Truth from the material supplied or available:
 - available proof and reviews
 - approved and forbidden claims
 - visual assets and target market
+
+For products in the user's current ecommerce portfolio, read [references/business-defaults.md](references/business-defaults.md) and use those policies when the product input does not provide an explicit approved exception.
 
 Translate each important feature through:
 
