@@ -1,0 +1,4 @@
+interface:
+  display_name: "AppLovin Creative Director"
+  short_description: "Develop grounded AppLovin ecommerce creative concepts"
+  default_prompt: "Use $applovin-creative-director to develop grounded AppLovin ecommerce video concepts for this product."
