@@ -1,0 +1,5 @@
+interface:
+  display_name: "AppLovin Storyboard Director"
+  short_description: "Turn approved scripts into production-ready shot plans"
+  default_prompt: "Use $applovin-storyboard-director to turn my approved script into a platform-neutral storyboard and production handoff."
+

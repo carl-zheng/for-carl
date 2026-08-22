@@ -1,0 +1,293 @@
+{
+  "schema_version": "1.0",
+  "handoff_id": "dac-us-24-mornings-production-handoff-v1",
+  "version": "1.0.0",
+  "source_lock": {
+    "storyboard_id": "dac-us-24-mornings-storyboard-v1",
+    "storyboard_version": "1.0.0",
+    "script_id": "dac-us-24-mornings-script-v1",
+    "script_version": "1.1.0",
+    "approved_concept": "24 Mornings of Dino Excitement",
+    "dominant_memory": "24 mornings, 24 dinosaur surprises.",
+    "duration_seconds": 50,
+    "market": "United States",
+    "language": "English (US)"
+  },
+  "platform_binding": {
+    "status": "PENDING_USER_PLATFORM",
+    "provider": null,
+    "connection_mode": null,
+    "adapter_id": null,
+    "profile_version": null,
+    "verification_source": null
+  },
+  "global_delivery_requirements": {
+    "aspect_ratio": "UNBOUND",
+    "resolution": "UNBOUND",
+    "frame_rate": "UNBOUND",
+    "output_container": "UNBOUND",
+    "audio_delivery": "UNBOUND",
+    "caption_delivery": "UNBOUND",
+    "product_identity_lock": "ASSET-R01 controls calendar identity; ASSET-R03 controls figure identity.",
+    "text_rendering_rule": "Price, policy, logo, CTA, and subtitles remain editor-owned unless a verified platform workflow supports exact editable text."
+  },
+  "asset_manifest": [
+    {
+      "asset_id": "ASSET-P01",
+      "requirement_status": "REQUIRED",
+      "access_state": "OBSERVED_NOT_SUPPLIED",
+      "inspection_state": "PARTIALLY_INSPECTED",
+      "origin": "product_page",
+      "role": "source image set and continuity reference",
+      "transfer_requirement": "Select and export exact files during platform binding."
+    },
+    {
+      "asset_id": "ASSET-R01",
+      "requirement_status": "REQUIRED",
+      "access_state": "NOT_SUPPLIED",
+      "inspection_state": "NOT_INSPECTED",
+      "origin": "product_page_selection",
+      "role": "master calendar identity, still, and motion reference",
+      "transfer_requirement": "Upload or remote-reference according to the verified platform profile."
+    },
+    {
+      "asset_id": "ASSET-R02",
+      "requirement_status": "REQUIRED",
+      "access_state": "NOT_SUPPLIED",
+      "inspection_state": "NOT_INSPECTED",
+      "origin": "product_page_or_real_capture",
+      "role": "numbered-door reveal motion reference",
+      "transfer_requirement": "Supply before JOB-03 production."
+    },
+    {
+      "asset_id": "ASSET-R03",
+      "requirement_status": "REQUIRED",
+      "access_state": "NOT_SUPPLIED",
+      "inspection_state": "NOT_INSPECTED",
+      "origin": "product_page_selection_or_real_capture",
+      "role": "figure identity, growing collection, and no-repeat proof",
+      "transfer_requirement": "Supply before JOB-03 through JOB-06 production."
+    },
+    {
+      "asset_id": "ASSET-R04",
+      "requirement_status": "REQUIRED_WITH_FALLBACK",
+      "access_state": "NOT_SUPPLIED",
+      "inspection_state": "NOT_INSPECTED",
+      "origin": "product_page_selection_or_real_capture",
+      "role": "ornament-use visual proof",
+      "transfer_requirement": "Supply before JOB-05 or use the approved editor claim-card fallback."
+    },
+    {
+      "asset_id": "ASSET-G01",
+      "requirement_status": "OPTIONAL",
+      "access_state": "NOT_SUPPLIED",
+      "inspection_state": "NOT_APPLICABLE",
+      "origin": "editor_or_generated_candidate",
+      "role": "seasonal environment background",
+      "transfer_requirement": "Create only after delivery format is bound."
+    },
+    {
+      "asset_id": "ASSET-G02",
+      "requirement_status": "REQUIRED",
+      "access_state": "NOT_SUPPLIED",
+      "inspection_state": "NOT_APPLICABLE",
+      "origin": "editor_created_graphic",
+      "role": "editable commercial overlays",
+      "transfer_requirement": "Build after launch-time values are verified."
+    },
+    {
+      "asset_id": "ASSET-A01",
+      "requirement_status": "REQUIRED",
+      "access_state": "NOT_SUPPLIED",
+      "inspection_state": "NOT_APPLICABLE",
+      "origin": "downstream_audio_production",
+      "role": "final approved voiceover",
+      "transfer_requirement": "Produce or upload after platform audio workflow is verified."
+    },
+    {
+      "asset_id": "ASSET-A02",
+      "requirement_status": "OPTIONAL",
+      "access_state": "NOT_SUPPLIED",
+      "inspection_state": "NOT_APPLICABLE",
+      "origin": "downstream_audio_production",
+      "role": "music and non-claim reveal sound effects",
+      "transfer_requirement": "Select during edit planning."
+    }
+  ],
+  "provider_neutral_job_units": [
+    {
+      "job_id": "JOB-01",
+      "shot_ids": ["S01"],
+      "duration_seconds": 3,
+      "source_asset_ids": ["ASSET-G01"],
+      "capability_needs": [
+        "seasonal environment motion or editor animation"
+      ],
+      "expected_output_role": "opening mood plate without baked-in exact text",
+      "provider_prompt": null,
+      "provider_payload": null
+    },
+    {
+      "job_id": "JOB-02",
+      "shot_ids": ["S02", "S03", "S04"],
+      "duration_seconds": 10,
+      "source_asset_ids": ["ASSET-R01", "ASSET-G01"],
+      "capability_needs": [
+        "still-to-motion",
+        "strict product-reference consistency",
+        "editor callout compositing"
+      ],
+      "expected_output_role": "closed-calendar hero and numbered-door explanation",
+      "provider_prompt": null,
+      "provider_payload": null
+    },
+    {
+      "job_id": "JOB-03",
+      "shot_ids": ["S05", "S06", "S07"],
+      "duration_seconds": 10,
+      "source_asset_ids": ["ASSET-R01", "ASSET-R02", "ASSET-R03"],
+      "capability_needs": [
+        "reference-consistent still-to-motion",
+        "generic hand interaction",
+        "progressive door-state continuity",
+        "multi-figure identity consistency"
+      ],
+      "expected_output_role": "three daily reveal moments with different page-consistent figures",
+      "provider_prompt": null,
+      "provider_payload": null
+    },
+    {
+      "job_id": "JOB-04",
+      "shot_ids": ["S08", "S09"],
+      "duration_seconds": 8,
+      "source_asset_ids": ["ASSET-R03"],
+      "capability_needs": [
+        "editor collection-growth compositing",
+        "figure identity preservation",
+        "truthful full-lineup fallback handling"
+      ],
+      "expected_output_role": "growing collection and optional complete 24-figure payoff",
+      "provider_prompt": null,
+      "provider_payload": null
+    },
+    {
+      "job_id": "JOB-05",
+      "shot_ids": ["S10", "S11"],
+      "duration_seconds": 7,
+      "source_asset_ids": ["ASSET-R03", "ASSET-R04"],
+      "capability_needs": [
+        "editor use-case compositing",
+        "page-consistent ornament visual or static claim-card fallback"
+      ],
+      "expected_output_role": "collect, display, play, and ornament-use value",
+      "provider_prompt": null,
+      "provider_payload": null
+    },
+    {
+      "job_id": "JOB-06",
+      "shot_ids": ["S12", "S13", "S14"],
+      "duration_seconds": 12,
+      "source_asset_ids": ["ASSET-R01", "ASSET-R03", "ASSET-G02"],
+      "capability_needs": [
+        "reference-consistent product hero",
+        "editable commercial overlays",
+        "AIP-ready end-frame hold"
+      ],
+      "expected_output_role": "offer sequence and tap-a-door AIP handoff",
+      "provider_prompt": null,
+      "provider_payload": null
+    }
+  ],
+  "editor_owned_layers": [
+    {
+      "layer_id": "OVERLAY-01",
+      "time_seconds": { "start": 0, "end": 3 },
+      "text": "Make December roar",
+      "verification": "PUFFERY"
+    },
+    {
+      "layer_id": "OVERLAY-02",
+      "time_seconds": { "start": 6, "end": 10 },
+      "text": "24-day dinosaur countdown",
+      "verification": "PAGE-CLEARED"
+    },
+    {
+      "layer_id": "OVERLAY-03",
+      "time_seconds": { "start": 13, "end": 18 },
+      "text": "24 unique dinosaurs · No repeats",
+      "verification": "PAGE-CLEARED"
+    },
+    {
+      "layer_id": "OVERLAY-04",
+      "time_seconds": { "start": 23, "end": 27 },
+      "text": "24 mornings. 24 dinosaur surprises.",
+      "verification": "PAGE-CLEARED"
+    },
+    {
+      "layer_id": "OVERLAY-05",
+      "time_seconds": { "start": 31, "end": 35 },
+      "text": "Collect · Display · Play · Hang",
+      "verification": "PAGE-CLEARED"
+    },
+    {
+      "layer_id": "OVERLAY-06",
+      "time_seconds": { "start": 38, "end": 43 },
+      "text": "$35.90 each",
+      "verification": "VERIFY BEFORE LAUNCH"
+    },
+    {
+      "layer_id": "OVERLAY-07",
+      "time_seconds": { "start": 43, "end": 47 },
+      "text": "Free standard shipping on orders $49+ · 30-day returns",
+      "verification": "USER-APPROVED; RECHECK BEFORE LAUNCH"
+    },
+    {
+      "layer_id": "SUBTITLES",
+      "time_seconds": { "start": 0, "end": 50 },
+      "text": "Verbatim script-v1 captions",
+      "verification": "Must match final voiceover and approved script."
+    }
+  ],
+  "audio_layers": [
+    {
+      "layer_id": "AUDIO-VO",
+      "asset_id": "ASSET-A01",
+      "time_seconds": { "start": 0, "end": 50 },
+      "role": "Verbatim approved voiceover; performed timing controls the final cut."
+    },
+    {
+      "layer_id": "AUDIO-MUSIC",
+      "asset_id": "ASSET-A02",
+      "time_seconds": { "start": 0, "end": 50 },
+      "role": "Seasonal, playful support under voiceover; no lyrical claim."
+    },
+    {
+      "layer_id": "AUDIO-SFX",
+      "asset_id": "ASSET-A02",
+      "time_seconds": { "start": 13, "end": 38 },
+      "role": "Light door-open and reveal accents that do not imply an unsupported mechanism."
+    }
+  ],
+  "validation_rules": [
+    "All storyboard shots remain continuous from 0 through 50 seconds.",
+    "Every shot is covered by exactly one provider-neutral job unit.",
+    "Calendar and figure identity remain faithful to ASSET-R01 and ASSET-R03.",
+    "All spoken copy remains verbatim from script-v1 and in the approved order.",
+    "No complete 24-figure lineup is fabricated when the faithful source is unavailable.",
+    "Ornament-use visuals remain faithful to ASSET-R04 or use the static page-claim fallback.",
+    "Price, bundle savings, shipping threshold, returns, and dynamic page values are rechecked before final export.",
+    "The $35.90 single item is never implied to qualify for free standard shipping.",
+    "S14 matches the first AIP state: the same calendar with one closed numbered door ready to tap."
+  ],
+  "minimum_platform_binding_questions": [
+    "What is the production platform and connection mode: API, browser workflow, upload/export, or local tool?",
+    "Which source image and video formats are accepted, and how many references may each job use?",
+    "Which generation modes and identity or reference controls are available?",
+    "What are the minimum and maximum clip durations?",
+    "Which aspect ratios, resolutions, frame rates, and output containers are supported?",
+    "Does the platform support audio, speech, lip sync, captions, logos, or exact text, or should those remain editor-owned?",
+    "How are jobs submitted, monitored, retried, and downloaded?",
+    "Which platform-specific limits or cost controls must the adapter enforce?"
+  ],
+  "handoff_status": "READY_FOR_PLATFORM_BINDING"
+}

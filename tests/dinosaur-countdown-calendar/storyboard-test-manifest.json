@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "test_id": "applovin-dinosaur-storyboard-handoff-v1",
+  "status": "active",
+  "skill_under_test": "applovin-storyboard-director >= 0.1.0",
+  "inputs": [
+    "product-truth.json",
+    "creative-brief.json",
+    "claim-boundaries.md",
+    "script-v1.json"
+  ],
+  "expected_outputs": [
+    "storyboard-v1.md",
+    "storyboard-v1.json",
+    "production-handoff-v1.json"
+  ],
+  "invariants": [
+    "The storyboard preserves script dac-us-24-mornings-script-v1 version 1.1.0 and the approved concept.",
+    "All shots form one continuous non-overlapping timeline from 0 through 50 seconds.",
+    "Every shot remains inside the time range of its parent script beat.",
+    "Every approved spoken line appears verbatim once in the storyboard and remains in script order; continuation shots add no new words.",
+    "Every shot has exactly one allowed source strategy and at least one stable asset requirement.",
+    "Every asset separates requirement status, access state, and inspection state; an observed page image is not treated as a supplied file.",
+    "A REQUIRED_PRODUCTION_ASSET gap blocks only the affected production job, not storyboard or claim approval.",
+    "No visual invents a product feature, figure design, customer reaction, testimonial, objective claim, or commercial value absent from approved inputs.",
+    "A complete 24-figure lineup is shown only when a faithful source exists; otherwise the growing-collection fallback is used.",
+    "Ornament use relies on a faithful source or the static page-claim fallback rather than an invented mechanism.",
+    "The $35.90 price, free standard shipping on orders $49+, and 30-day returns remain editable overlays and retain their launch-time verification rules.",
+    "The $35.90 single item is never implied to qualify for free standard shipping.",
+    "Platform provider, aspect ratio, resolution, frame rate, clip limits, prompt syntax, and API behavior remain UNBOUND when no verified profile is supplied.",
+    "Provider prompt and payload fields remain null; the Storyboard Director does not generate media or submit platform jobs.",
+    "Every storyboard shot is assigned to exactly one provider-neutral job unit and job-unit durations sum to 50 seconds.",
+    "The final frame matches the approved AIP opening state: the same calendar with one closed numbered door ready to tap.",
+    "Markdown and JSON agree on shot IDs, timing, voiceover mapping, on-screen copy, source strategies, asset IDs, gaps, and final status.",
+    "The final status is READY_FOR_PLATFORM_BINDING."
+  ]
+}

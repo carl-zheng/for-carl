@@ -1,0 +1,439 @@
+{
+  "schema_version": "1.0",
+  "visual_lock": {
+    "storyboard_id": "dac-us-24-mornings-storyboard-v1",
+    "version": "1.0.0",
+    "source_script_id": "dac-us-24-mornings-script-v1",
+    "source_script_version": "1.1.0",
+    "approved_concept": "24 Mornings of Dino Excitement",
+    "dominant_memory": "24 mornings, 24 dinosaur surprises.",
+    "target_market": "United States",
+    "language": "English (US)",
+    "total_duration_seconds": 50,
+    "delivery_format": {
+      "mode": "PLATFORM-NEUTRAL",
+      "aspect_ratio": "UNBOUND",
+      "resolution": "UNBOUND",
+      "frame_rate": "UNBOUND"
+    },
+    "platform_binding_status": "PENDING_USER_PLATFORM",
+    "claim_offer_constraints": [
+      "Product-detail-page claims and visuals are PAGE-CLEARED.",
+      "Recognizable visual puffery is allowed but cannot create a new measurable product fact.",
+      "The $35.90 price and all dynamic offer values require a launch-time recheck.",
+      "Free standard shipping must remain qualified as applying to orders $49+.",
+      "The return period remains 30 days unless the user supplies an explicit exception."
+    ]
+  },
+  "asset_inventory": [
+    {
+      "asset_id": "ASSET-P01",
+      "description": "The nine static product-page images observed in the saved Product Truth; individual file-to-role mapping is not yet exported.",
+      "requirement_status": "REQUIRED",
+      "access_state": "OBSERVED_NOT_SUPPLIED",
+      "inspection_state": "PARTIALLY_INSPECTED",
+      "origin": "product_page",
+      "usable_roles": [
+        "identity_reference",
+        "static_use",
+        "continuity_reference"
+      ],
+      "relevance": "Primary source for calendar design, packaging, colors, door layout, and dinosaur appearance."
+    },
+    {
+      "asset_id": "ASSET-R01",
+      "description": "A selected clean full-calendar reference from ASSET-P01.",
+      "requirement_status": "REQUIRED",
+      "access_state": "NOT_SUPPLIED",
+      "inspection_state": "NOT_INSPECTED",
+      "origin": "product_page_selection",
+      "usable_roles": [
+        "identity_reference",
+        "motion_reference",
+        "static_use"
+      ],
+      "relevance": "Required to keep the hero product stable across product, offer, and AIP shots."
+    },
+    {
+      "asset_id": "ASSET-R02",
+      "description": "A page-consistent close-up reference or real capture showing a numbered door and reveal interaction.",
+      "requirement_status": "REQUIRED",
+      "access_state": "NOT_SUPPLIED",
+      "inspection_state": "NOT_INSPECTED",
+      "origin": "product_page_or_real_capture",
+      "usable_roles": [
+        "motion_reference",
+        "proof"
+      ],
+      "relevance": "Supports the daily opening mechanism and progressive door-state continuity."
+    },
+    {
+      "asset_id": "ASSET-R03",
+      "description": "A page-consistent set of visibly different dinosaur figures and, if available, a complete 24-figure lineup.",
+      "requirement_status": "REQUIRED",
+      "access_state": "NOT_SUPPLIED",
+      "inspection_state": "NOT_INSPECTED",
+      "origin": "product_page_selection_or_real_capture",
+      "usable_roles": [
+        "identity_reference",
+        "static_use",
+        "proof"
+      ],
+      "relevance": "Supports the no-repeat claim and growing-collection continuity."
+    },
+    {
+      "asset_id": "ASSET-R04",
+      "description": "Existing page imagery or a faithful real capture showing dinosaur-themed Christmas ornament use.",
+      "requirement_status": "REQUIRED_WITH_FALLBACK",
+      "access_state": "NOT_SUPPLIED",
+      "inspection_state": "NOT_INSPECTED",
+      "origin": "product_page_selection_or_real_capture",
+      "usable_roles": [
+        "static_use",
+        "motion_reference",
+        "proof"
+      ],
+      "relevance": "Supports the page-cleared ornament-use visual."
+    },
+    {
+      "asset_id": "ASSET-G01",
+      "description": "A generic December-morning environment plate with no product claim or customer-reaction implication.",
+      "requirement_status": "OPTIONAL",
+      "access_state": "NOT_SUPPLIED",
+      "inspection_state": "NOT_APPLICABLE",
+      "origin": "editor_or_generated_candidate",
+      "usable_roles": [
+        "background"
+      ],
+      "relevance": "Carries the opening puffery and seasonal mood."
+    },
+    {
+      "asset_id": "ASSET-G02",
+      "description": "Editor-owned offer and policy overlay package using exact approved text.",
+      "requirement_status": "REQUIRED",
+      "access_state": "NOT_SUPPLIED",
+      "inspection_state": "NOT_APPLICABLE",
+      "origin": "editor_created_graphic",
+      "usable_roles": [
+        "overlay"
+      ],
+      "relevance": "Keeps price, shipping threshold, and return copy accurate and editable."
+    },
+    {
+      "asset_id": "ASSET-A01",
+      "description": "Final approved US English voiceover recording of script-v1.",
+      "requirement_status": "REQUIRED",
+      "access_state": "NOT_SUPPLIED",
+      "inspection_state": "NOT_APPLICABLE",
+      "origin": "downstream_audio_production",
+      "usable_roles": [
+        "audio"
+      ],
+      "relevance": "Locks pacing and final shot timing."
+    },
+    {
+      "asset_id": "ASSET-A02",
+      "description": "Music and light door-open or reveal sound effects that do not imply a product capability.",
+      "requirement_status": "OPTIONAL",
+      "access_state": "NOT_SUPPLIED",
+      "inspection_state": "NOT_APPLICABLE",
+      "origin": "downstream_audio_production",
+      "usable_roles": [
+        "audio"
+      ],
+      "relevance": "Supports rhythm and comprehension without adding claims."
+    }
+  ],
+  "shots": [
+    {
+      "shot_id": "S01",
+      "time_seconds": { "start": 0, "end": 3, "duration": 3 },
+      "parent_beat": "opening",
+      "visual_purpose": "Establish an exciting December-morning mood with obvious visual puffery.",
+      "voiceover_mapping": "What if every December morning could roar with dinosaur excitement?",
+      "on_screen_copy": "Make December roar",
+      "visual_action": "Morning light enters a seasonal room while a playful dinosaur-shaped shadow or graphic motif crosses the background; the product is not yet shown.",
+      "framing_composition": "Wide establishing composition with a center-safe area for the opening overlay.",
+      "product_state": "OFFSCREEN",
+      "source_strategy": "AI_GENERATION_CANDIDATE",
+      "asset_ids": ["ASSET-G01"],
+      "claim_proof_note": "PUFFERY — the dinosaur shadow is an obvious mood metaphor and not a physical product feature.",
+      "continuity_in": "Cold open.",
+      "continuity_out": "Seasonal light and color carry into the product reveal.",
+      "capability_need": "Seasonal environment motion or editor animation; exact text remains editor-owned."
+    },
+    {
+      "shot_id": "S02",
+      "time_seconds": { "start": 3, "end": 6, "duration": 3 },
+      "parent_beat": "opening",
+      "visual_purpose": "Reveal the closed calendar as the source of the daily excitement.",
+      "voiceover_mapping": "CONTINUES — no new words",
+      "on_screen_copy": "",
+      "visual_action": "The closed calendar settles into the seasonal setting with its real design readable and unobstructed.",
+      "framing_composition": "Centered hero framing with format-safe margins.",
+      "product_state": "CLOSED_CALENDAR_ALL_DOORS_INTACT",
+      "source_strategy": "MOTION_FROM_REFERENCE",
+      "asset_ids": ["ASSET-R01", "ASSET-G01"],
+      "claim_proof_note": "PAGE-CLEARED product appearance; no added product feature.",
+      "continuity_in": "Matches S01 seasonal light and color.",
+      "continuity_out": "Calendar identity becomes the master reference for S03 onward.",
+      "capability_need": "Still-to-motion with strict product-reference consistency."
+    },
+    {
+      "shot_id": "S03",
+      "time_seconds": { "start": 6, "end": 10, "duration": 4 },
+      "parent_beat": "product_reveal",
+      "visual_purpose": "Identify the product and anchor the 24-day mechanism.",
+      "voiceover_mapping": "The Dinosaur Adventure Countdown Calendar turns one Christmas gift into a 24-day ritual.",
+      "on_screen_copy": "24-day dinosaur countdown",
+      "visual_action": "The full calendar remains centered while the numbered-door structure is clearly visible.",
+      "framing_composition": "Front-facing product hero with clear space for a short title overlay.",
+      "product_state": "CLOSED_CALENDAR_ALL_DOORS_INTACT",
+      "source_strategy": "MOTION_FROM_REFERENCE",
+      "asset_ids": ["ASSET-R01"],
+      "claim_proof_note": "PAGE-CLEARED 24-day calendar structure.",
+      "continuity_in": "Same product design, color, and intact-door state as S02.",
+      "continuity_out": "Prepares a closer read of door numbering.",
+      "capability_need": "Reference-consistent product motion; overlay stays editor-owned."
+    },
+    {
+      "shot_id": "S04",
+      "time_seconds": { "start": 10, "end": 13, "duration": 3 },
+      "parent_beat": "product_reveal",
+      "visual_purpose": "Make the 24 numbered doors immediately understandable.",
+      "voiceover_mapping": "CONTINUES — no new words",
+      "on_screen_copy": "",
+      "visual_action": "A clean editor graphic traces representative door numbers across the real calendar without altering its layout.",
+      "framing_composition": "Close product crop with non-destructive graphic callouts.",
+      "product_state": "CLOSED_CALENDAR_ALL_DOORS_INTACT",
+      "source_strategy": "EDITOR_GRAPHIC",
+      "asset_ids": ["ASSET-R01"],
+      "claim_proof_note": "PAGE-CLEARED 24 numbered doors; graphic must match the source layout.",
+      "continuity_in": "Same intact calendar as S03.",
+      "continuity_out": "Moves toward the first physical door interaction.",
+      "capability_need": "Editor compositing and callout animation."
+    },
+    {
+      "shot_id": "S05",
+      "time_seconds": { "start": 13, "end": 18, "duration": 5 },
+      "parent_beat": "daily_ritual",
+      "visual_purpose": "Demonstrate the first numbered-door reveal.",
+      "voiceover_mapping": "Open one numbered door each day and discover a unique dinosaur waiting inside—24 surprises, no repeats.",
+      "on_screen_copy": "24 unique dinosaurs · No repeats",
+      "visual_action": "A generic hand opens one numbered door and reveals the first page-consistent dinosaur figure.",
+      "framing_composition": "Close-up of the door interaction with the product identity still recognizable.",
+      "product_state": "ONE_DOOR_OPEN_ONE_FIGURE_REVEALED",
+      "source_strategy": "MOTION_FROM_REFERENCE",
+      "asset_ids": ["ASSET-R01", "ASSET-R02", "ASSET-R03"],
+      "claim_proof_note": "PAGE-CLEARED daily reveal and no-repeat promise; the generic hand does not imply a testimonial.",
+      "continuity_in": "Calendar begins with all doors intact.",
+      "continuity_out": "One door remains open and the first figure joins the collection.",
+      "capability_need": "Reference-consistent door motion, hand interaction, and figure identity."
+    },
+    {
+      "shot_id": "S06",
+      "time_seconds": { "start": 18, "end": 21, "duration": 3 },
+      "parent_beat": "daily_ritual",
+      "visual_purpose": "Show the ritual repeating on another morning with a different figure.",
+      "voiceover_mapping": "CONTINUES — no new words",
+      "on_screen_copy": "",
+      "visual_action": "A second numbered door opens and reveals a visibly different page-consistent dinosaur.",
+      "framing_composition": "Matched close-up with a changed door number and figure.",
+      "product_state": "TWO_DOORS_OPEN_TWO_DIFFERENT_FIGURES_REVEALED",
+      "source_strategy": "MOTION_FROM_REFERENCE",
+      "asset_ids": ["ASSET-R01", "ASSET-R02", "ASSET-R03"],
+      "claim_proof_note": "PAGE-CLEARED no-repeat promise.",
+      "continuity_in": "Preserve the first open door and first figure from S05.",
+      "continuity_out": "Two open doors and two different figures carry forward.",
+      "capability_need": "Multi-shot product-state and figure-reference consistency."
+    },
+    {
+      "shot_id": "S07",
+      "time_seconds": { "start": 21, "end": 23, "duration": 2 },
+      "parent_beat": "daily_ritual",
+      "visual_purpose": "Complete the quick reveal pattern and reinforce variety.",
+      "voiceover_mapping": "CONTINUES — no new words",
+      "on_screen_copy": "",
+      "visual_action": "A third door-reveal moment resolves on three visibly different figures together.",
+      "framing_composition": "Fast close reveal ending on a small three-figure lineup.",
+      "product_state": "THREE_DOORS_OPEN_THREE_DIFFERENT_FIGURES_REVEALED",
+      "source_strategy": "MOTION_FROM_REFERENCE",
+      "asset_ids": ["ASSET-R01", "ASSET-R02", "ASSET-R03"],
+      "claim_proof_note": "PAGE-CLEARED variety and no-repeat promise.",
+      "continuity_in": "Preserve the two open doors and two figures from S06.",
+      "continuity_out": "Three-figure lineup becomes the starting state for collection growth.",
+      "capability_need": "Reference consistency across calendar state and three figures."
+    },
+    {
+      "shot_id": "S08",
+      "time_seconds": { "start": 23, "end": 27, "duration": 4 },
+      "parent_beat": "collection_growth",
+      "visual_purpose": "Visualize the collection accumulating morning by morning.",
+      "voiceover_mapping": "Morning by morning, the collection grows, all the way to day twenty-four.",
+      "on_screen_copy": "24 mornings. 24 dinosaur surprises.",
+      "visual_action": "Editor-controlled increments expand the lineup from the three revealed figures into a larger page-consistent collection without claiming an unsupported intermediate count.",
+      "framing_composition": "Stable tabletop or display composition that leaves room for the collection to expand.",
+      "product_state": "GROWING_COLLECTION",
+      "source_strategy": "EDITOR_GRAPHIC",
+      "asset_ids": ["ASSET-R03"],
+      "claim_proof_note": "PAGE-CLEARED 24-day and 24-figure accumulation; intermediate counts remain illustrative rather than labeled.",
+      "continuity_in": "Begins from the three figures shown in S07.",
+      "continuity_out": "Expanded lineup prepares the complete-collection promise.",
+      "capability_need": "Editor compositing with figure identity preservation."
+    },
+    {
+      "shot_id": "S09",
+      "time_seconds": { "start": 27, "end": 31, "duration": 4 },
+      "parent_beat": "collection_growth",
+      "visual_purpose": "Land the day-24 collection payoff and no-repeat memory.",
+      "voiceover_mapping": "CONTINUES — no new words",
+      "on_screen_copy": "",
+      "visual_action": "Resolve on a complete page-consistent 24-figure lineup if that source is available; otherwise hold a clearly growing collection without fabricating unseen figures.",
+      "framing_composition": "Orderly collection overview with each shown figure legible enough to appear distinct.",
+      "product_state": "COMPLETE_24_FIGURE_LINEUP_IF_SOURCE_AVAILABLE_OTHERWISE_GROWING_COLLECTION",
+      "source_strategy": "UNRESOLVED",
+      "asset_ids": ["ASSET-R03"],
+      "claim_proof_note": "PAGE-CLEARED 24 unique figures; the visual cannot invent missing figure designs.",
+      "continuity_in": "Continues the growing lineup from S08.",
+      "continuity_out": "Displayed figures remain available for the after-countdown uses.",
+      "capability_need": "Verified full-lineup asset or truthful collection composition."
+    },
+    {
+      "shot_id": "S10",
+      "time_seconds": { "start": 31, "end": 35, "duration": 4 },
+      "parent_beat": "after_countdown_value",
+      "visual_purpose": "Show the figures retaining value through collecting, display, and play.",
+      "voiceover_mapping": "After the countdown, collect them, display them, play with them, or hang them as dinosaur Christmas ornaments.",
+      "on_screen_copy": "Collect · Display · Play · Hang",
+      "visual_action": "A clean multi-panel or sequential editor composition presents page-consistent figures being collected, displayed, and used in generic play without a testimonial reaction.",
+      "framing_composition": "Three clear use panels or a simple sequential layout with product-first emphasis.",
+      "product_state": "FIGURES_OUTSIDE_CALENDAR_IN_APPROVED_USE_CONTEXTS",
+      "source_strategy": "EDITOR_GRAPHIC",
+      "asset_ids": ["ASSET-R03"],
+      "claim_proof_note": "PAGE-CLEARED collecting, display, and play benefits.",
+      "continuity_in": "Uses the same figure identities established in the collection sequence.",
+      "continuity_out": "One figure transitions toward the ornament-use context.",
+      "capability_need": "Editor compositing; no customer reaction generation required."
+    },
+    {
+      "shot_id": "S11",
+      "time_seconds": { "start": 35, "end": 38, "duration": 3 },
+      "parent_beat": "after_countdown_value",
+      "visual_purpose": "Show the page-cleared dinosaur Christmas ornament use.",
+      "voiceover_mapping": "CONTINUES — no new words",
+      "on_screen_copy": "",
+      "visual_action": "Show the product-page-consistent ornament use only if ASSET-R04 is supplied; otherwise substitute a static page copy card rather than inventing a hanging mechanism.",
+      "framing_composition": "Tight seasonal detail with the figure identity and use readable.",
+      "product_state": "ORNAMENT_USE_IF_SOURCE_AVAILABLE",
+      "source_strategy": "UNRESOLVED",
+      "asset_ids": ["ASSET-R04"],
+      "claim_proof_note": "PAGE-CLEARED ornament-use claim; the physical mechanism must remain faithful to the supplied source.",
+      "continuity_in": "Carry one established figure identity from S10.",
+      "continuity_out": "Seasonal styling transitions into the offer product hero.",
+      "capability_need": "Verified ornament visual or editor-owned static claim card."
+    },
+    {
+      "shot_id": "S12",
+      "time_seconds": { "start": 38, "end": 43, "duration": 5 },
+      "parent_beat": "offer_and_action",
+      "visual_purpose": "Return to the hero product and introduce the single-item price accurately.",
+      "voiceover_mapping": "One calendar is $35.90. Free standard shipping on orders $49+. Plus, 30-day returns. Tap a door, reveal a dinosaur, and make December roar.",
+      "on_screen_copy": "$35.90 each",
+      "visual_action": "The closed calendar and selected figures return in a clean offer composition while the editor-owned price appears separately.",
+      "framing_composition": "Product hero with a dedicated high-contrast overlay zone.",
+      "product_state": "OFFER_HERO_SINGLE_CALENDAR",
+      "source_strategy": "MOTION_FROM_REFERENCE",
+      "asset_ids": ["ASSET-R01", "ASSET-R03", "ASSET-G02"],
+      "claim_proof_note": "VERIFY BEFORE LAUNCH — current single-item price snapshot; no free-shipping implication on the single item.",
+      "continuity_in": "Same calendar and figures used throughout the storyboard.",
+      "continuity_out": "Product remains on screen while policy overlays change.",
+      "capability_need": "Reference-consistent product motion; exact price remains editor-owned."
+    },
+    {
+      "shot_id": "S13",
+      "time_seconds": { "start": 43, "end": 47, "duration": 4 },
+      "parent_beat": "offer_and_action",
+      "visual_purpose": "State the qualified shipping threshold and return policy without ambiguity.",
+      "voiceover_mapping": "CONTINUES — no new words",
+      "on_screen_copy": "Free standard shipping on orders $49+ · 30-day returns",
+      "visual_action": "Editor-owned shipping and return copy replaces the price overlay while the same product hero remains stable.",
+      "framing_composition": "Stable hero composition with policy text prioritized for readability.",
+      "product_state": "OFFER_HERO_POLICY_STATE",
+      "source_strategy": "EDITOR_GRAPHIC",
+      "asset_ids": ["ASSET-R01", "ASSET-G02"],
+      "claim_proof_note": "USER-APPROVED business defaults; the $49 threshold must remain attached to free standard shipping.",
+      "continuity_in": "Same hero plate as S12.",
+      "continuity_out": "Policy overlay clears to reveal the AIP transition state.",
+      "capability_need": "Editable text overlay and launch-time value update."
+    },
+    {
+      "shot_id": "S14",
+      "time_seconds": { "start": 47, "end": 50, "duration": 3 },
+      "parent_beat": "offer_and_action",
+      "visual_purpose": "Hand off seamlessly into the tap-a-door AIP interaction.",
+      "voiceover_mapping": "CONTINUES — no new words",
+      "on_screen_copy": "",
+      "visual_action": "The end frame isolates one numbered door with a clear tap target and freezes before the reveal so the AIP can continue the action.",
+      "framing_composition": "Close interactive end frame with one dominant tap target and format-safe margins.",
+      "product_state": "AIP_HANDOFF_DOOR_CLOSED_READY_TO_TAP",
+      "source_strategy": "EDITOR_GRAPHIC",
+      "asset_ids": ["ASSET-R01"],
+      "claim_proof_note": "CLEARED AIP continuation; no new claim.",
+      "continuity_in": "Same calendar identity as the offer hero.",
+      "continuity_out": "Exact first state required by the AIP: one closed numbered door ready to tap.",
+      "capability_need": "Editor-created interactive end frame and export hold."
+    }
+  ],
+  "continuity_map": {
+    "product_identity": "Use ASSET-R01 as the master calendar reference and ASSET-R03 as the master figure reference; do not redesign packaging, colors, layout, numbering, or figure appearance.",
+    "door_state_progression": [
+      "S02-S04: all doors intact",
+      "S05: one door open",
+      "S06: two doors open",
+      "S07: three doors open"
+    ],
+    "collection_progression": "Three distinct figures at S07 expand through S08; S09 shows all 24 only when a faithful full-lineup source exists.",
+    "repeated_human_element": "If a hand appears in S05-S07, keep its general appearance and direction of interaction consistent; it remains a generic production element, not a customer.",
+    "seasonal_style": "Carry the same December light and restrained seasonal color treatment from S01-S02 into S11-S12.",
+    "commercial_copy": "Render price, free-shipping threshold, returns, and any logo as editable overlays rather than generated in-scene text.",
+    "aip_transition": "S14 must match the AIP opening state: the same calendar, one closed numbered door, and a clear tap target."
+  },
+  "gaps": [
+    {
+      "gap_id": "GAP-01",
+      "class": "PLATFORM-BINDING",
+      "description": "Provider, aspect ratio, resolution, frame rate, maximum clip duration, reference limits, and audio capabilities are not yet supplied."
+    },
+    {
+      "gap_id": "GAP-02",
+      "class": "REQUIRED_PRODUCTION_ASSET",
+      "description": "Export and map ASSET-P01, select the clean ASSET-R01 master reference, and select or capture ASSET-R02 for the door-opening sequence."
+    },
+    {
+      "gap_id": "GAP-03",
+      "class": "QUALITY-UPGRADE",
+      "description": "Select a faithful 24-figure lineup source for the full S09 payoff; otherwise use the approved growing-collection fallback."
+    },
+    {
+      "gap_id": "GAP-04",
+      "class": "QUALITY-UPGRADE",
+      "description": "Select product-page ornament imagery or a faithful real capture for S11; otherwise use the approved static claim-card fallback."
+    },
+    {
+      "gap_id": "GAP-05",
+      "class": "LAUNCH-GATE",
+      "description": "Recheck price, bundle savings, destination copy, free-shipping threshold, returns, and any dynamic page content before final export."
+    }
+  ],
+  "final_checks": {
+    "shot_count": 14,
+    "total_duration_seconds": 50,
+    "timeline_integrity": "PASS",
+    "script_copy_integrity": "PASS",
+    "visual_claim_audit": "PASS",
+    "asset_coverage": "PASS_WITH_NAMED_GAPS",
+    "continuity_risk": "MANAGEABLE_WITH_REFERENCE_LOCKS",
+    "platform_binding_status": "PENDING_USER_PLATFORM",
+    "handoff_status": "READY_FOR_PLATFORM_BINDING"
+  }
+}
