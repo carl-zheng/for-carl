@@ -14,12 +14,13 @@
     "language": "English (US)"
   },
   "platform_binding": {
-    "status": "PENDING_USER_PLATFORM",
-    "provider": null,
-    "connection_mode": null,
-    "adapter_id": null,
-    "profile_version": null,
-    "verification_source": null
+    "status": "BINDING_IN_PROGRESS_SCHEMA_DISCOVERY_REQUIRED",
+    "provider": "KreadoAI",
+    "connection_mode": "MCP_HTTP",
+    "adapter_id": "kreadoai-seedance-v0.1",
+    "profile_version": "0.1.0",
+    "verification_source": "integrations/kreadoai/platform-profile-v0.1.json",
+    "provider_binding_file": "tests/dinosaur-countdown-calendar/kreadoai-binding-v0.1.json"
   },
   "global_delivery_requirements": {
     "aspect_ratio": "UNBOUND",
@@ -291,3 +292,4 @@
   ],
   "handoff_status": "READY_FOR_PLATFORM_BINDING"
 }
+

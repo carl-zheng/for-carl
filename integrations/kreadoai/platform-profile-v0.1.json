@@ -108,6 +108,13 @@
   },
   "approval_policy": {
     "initial_enabled_tools": ["list_seedance_builtin_virtual_character_labels"],
+    "schema_discovery_enabled_tools": [
+      "submit_seedance_text_to_video",
+      "submit_seedance_video_with_references",
+      "submit_seedance_first_last_video",
+      "batch_get_video_generation_detail"
+    ],
+    "schema_discovery_invocation_policy": "LOAD_DECLARATIONS_ONLY_DO_NOT_INVOKE_SUBMISSION_TOOLS",
     "default_tool_approval_mode": "prompt",
     "disabled_tools": ["delete_seedance_asset_library_assets"],
     "pricing": "NOT_DOCUMENTED_DO_NOT_INVENT",

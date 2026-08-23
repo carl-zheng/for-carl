@@ -1,0 +1,296 @@
+{
+  "schema_version": "0.1",
+  "binding_id": "dac-us-24-mornings-kreadoai-binding-v0.1",
+  "version": "0.1.0",
+  "source_handoff": {
+    "path": "tests/dinosaur-countdown-calendar/production-handoff-v1.json",
+    "handoff_id": "dac-us-24-mornings-production-handoff-v1",
+    "handoff_version": "1.0.0",
+    "creative_timeline_seconds": 50,
+    "market": "United States",
+    "language": "English (US)"
+  },
+  "provider": {
+    "name": "KreadoAI",
+    "adapter_id": "kreadoai-seedance-v0.1",
+    "profile": "integrations/kreadoai/platform-profile-v0.1.json",
+    "connection_mode": "MCP_HTTP",
+    "connection_verification": "AUTHENTICATED_READ_ONLY_VERIFIED"
+  },
+  "binding_status": "PLUGIN_UPDATE_READY_NEW_THREAD_REQUIRED",
+  "execution_status": "NO_MEDIA_SUBMISSION_AUTHORIZED",
+  "safety_lock": {
+    "current_scope": "CONFIGURE_AND_INSPECT_LIVE_TOOL_SCHEMAS_ONLY",
+    "media_submission_authorized": false,
+    "remote_asset_creation_authorized": false,
+    "web_crawl_authorized": false,
+    "resubmission_authorized": false,
+    "deletion_enabled": false,
+    "default_tool_approval_mode": "prompt",
+    "generate_count_cap_before_separate_approval": 1,
+    "pricing_status": "UNKNOWN_DO_NOT_INVENT"
+  },
+  "plugin_tool_plan": {
+    "configured_allowlist": [
+      "list_seedance_builtin_virtual_character_labels",
+      "submit_seedance_text_to_video",
+      "submit_seedance_video_with_references",
+      "submit_seedance_first_last_video",
+      "batch_get_video_generation_detail"
+    ],
+    "purpose": "Load live input schemas after plugin reinstall and restart; do not invoke submission tools during schema discovery.",
+    "deletion_denylist": [
+      "delete_seedance_asset_library_assets"
+    ]
+  },
+  "media_input_contract": {
+    "images_max": 9,
+    "videos_max": 3,
+    "audios_max": 3,
+    "all_reference_items_max": 12,
+    "video_reference_total_seconds_max": 15,
+    "audio_reference_total_seconds_max": 15,
+    "prompt_reference_tokens": "Bind exact @图片N, @视频N, and @音频N indices only after the live schema and actual media list are known.",
+    "status": "DOCUMENTED_LIMITS_BOUND_ACTUAL_MEDIA_INPUTS_UNBOUND"
+  },
+  "polling_contract": {
+    "tool": "batch_get_video_generation_detail",
+    "interval_seconds": {"minimum": 10, "maximum": 30},
+    "status_actions": {
+      "1": "CONTINUE_POLLING",
+      "2": "SUCCESS_READ_VIDEO_URL",
+      "3": "STOP_AND_REPORT_ERROR",
+      "4": "STOP_AND_REPORT_ERROR"
+    },
+    "automatic_resubmission": false
+  },
+  "delivery_binding": {
+    "aspect_ratio": {
+      "recommended": "9:16",
+      "status": "RECOMMENDED_NOT_APPROVED",
+      "reason": "Primary mobile performance-ad delivery. Preserve an editor-safe center area for alternate crops."
+    },
+    "model": {
+      "recommended_final": "Doubao-seedance-2",
+      "status": "PENDING_LIVE_SCHEMA_AND_USER_APPROVAL",
+      "reason": "The supplied documentation lists 1080P support only for the standard model; pricing is unknown."
+    },
+    "resolution": {
+      "recommended_smoke_test": "720P",
+      "recommended_final": "1080P",
+      "status": "PENDING_MODEL_AND_USER_APPROVAL"
+    },
+    "frame_rate": {
+      "value": "UNBOUND",
+      "owner": "editor",
+      "reason": "Not documented in the supplied KreadoAI MCP specification."
+    },
+    "output_container": {
+      "value": "UNBOUND",
+      "owner": "download_and_edit_workflow"
+    },
+    "generate_audio": {
+      "recommended": false,
+      "status": "PENDING_LIVE_FIELD_VERIFICATION",
+      "reason": "Voiceover, music, and sound effects remain editor-owned."
+    },
+    "web_search": {
+      "recommended": false,
+      "status": "PENDING_LIVE_FIELD_VERIFICATION"
+    },
+    "generate_count": {
+      "recommended": 1,
+      "maximum_without_separate_approval": 1
+    },
+    "exact_text": {
+      "provider_generation": "PROHIBITED",
+      "owner": "editor",
+      "includes": [
+        "price",
+        "shipping threshold",
+        "return policy",
+        "CTA",
+        "logo",
+        "subtitles"
+      ]
+    }
+  },
+  "asset_binding": [
+    {
+      "asset_id": "ASSET-G01",
+      "provider_role": "GENERATED_OR_EDITOR_SEASONAL_BACKGROUND",
+      "status": "OPTIONAL_GENERATION_CANDIDATE",
+      "used_by": ["JOB-01", "JOB-02"]
+    },
+    {
+      "asset_id": "ASSET-R01",
+      "provider_role": "PRIMARY_PRODUCT_IDENTITY_IMAGE",
+      "status": "BLOCKED_PENDING_EXACT_PRODUCT_PAGE_FILE",
+      "used_by": ["JOB-02", "JOB-03", "JOB-06"]
+    },
+    {
+      "asset_id": "ASSET-R02",
+      "provider_role": "DOOR_REVEAL_MOTION_REFERENCE",
+      "status": "BLOCKED_PENDING_PAGE_MEDIA_OR_REAL_CAPTURE",
+      "used_by": ["JOB-03"]
+    },
+    {
+      "asset_id": "ASSET-R03",
+      "provider_role": "FIGURE_IDENTITY_AND_LINEUP_REFERENCE",
+      "status": "BLOCKED_PENDING_EXACT_PRODUCT_PAGE_FILES",
+      "used_by": ["JOB-03", "JOB-04", "JOB-05", "JOB-06"]
+    },
+    {
+      "asset_id": "ASSET-R04",
+      "provider_role": "ORNAMENT_USE_REFERENCE",
+      "status": "OPTIONAL_WITH_EDITOR_CLAIM_CARD_FALLBACK",
+      "used_by": ["JOB-05"]
+    },
+    {
+      "asset_id": "ASSET-G02",
+      "provider_role": "EDITOR_ONLY_COMMERCIAL_OVERLAYS",
+      "status": "DO_NOT_SEND_TO_VIDEO_GENERATION",
+      "used_by": ["JOB-06"]
+    },
+    {
+      "asset_id": "ASSET-A01",
+      "provider_role": "EDITOR_OWNED_VOICEOVER",
+      "status": "OUTSIDE_SEEDANCE_VIDEO_GENERATION"
+    },
+    {
+      "asset_id": "ASSET-A02",
+      "provider_role": "EDITOR_OWNED_MUSIC_AND_SFX",
+      "status": "OUTSIDE_SEEDANCE_VIDEO_GENERATION"
+    }
+  ],
+  "job_mappings": [
+    {
+      "job_id": "JOB-01",
+      "candidate_tool": "submit_seedance_text_to_video",
+      "creative_duration_seconds": 3,
+      "provider_duration_seconds": 4,
+      "editor_action": "Trim the generated four-second plate to the approved three-second opening.",
+      "reference_plan": [],
+      "prompt_brief": "Vertical mobile-ad establishing plate in a warm American home on a December morning. Gentle seasonal light and a clearly metaphorical dinosaur-shaped shadow move across the background. No product, people, logos, captions, prices, or readable text. Leave clean center space for an editor-owned headline.",
+      "fixed_parameters": {
+        "generateCount": 1,
+        "generateAudio": false,
+        "webSearch": false
+      },
+      "status": "READY_AFTER_LIVE_SCHEMA_AND_USER_APPROVAL"
+    },
+    {
+      "job_id": "JOB-02",
+      "candidate_tool": "submit_seedance_video_with_references",
+      "creative_duration_seconds": 10,
+      "provider_duration_seconds": 7,
+      "provider_shot_scope": ["S02", "S03"],
+      "editor_action": "Create S04 as a three-second editor freeze/callout so the door-number graphic remains exact and editable.",
+      "reference_plan": [
+        {"prompt_token": "@图片1", "asset_id": "ASSET-R01", "required": true},
+        {"prompt_token": "@图片2", "asset_id": "ASSET-G01", "required": false}
+      ],
+      "prompt_brief": "Use @图片1 as the strict product-identity reference. Place the same closed calendar in a restrained seasonal setting derived from @图片2 when supplied. Use a slow hero push-in and subtle parallax while preserving the exact calendar artwork, proportions, numbered-door layout, colors, and packaging. Do not open a door or generate any readable text; callouts remain editor-owned.",
+      "fixed_parameters": {
+        "generateCount": 1,
+        "generateAudio": false
+      },
+      "status": "BLOCKED_ASSET_R01_AND_LIVE_SCHEMA"
+    },
+    {
+      "job_id": "JOB-03",
+      "candidate_tool": "submit_seedance_video_with_references",
+      "creative_duration_seconds": 10,
+      "provider_duration_seconds": 10,
+      "reference_plan": [
+        {"prompt_token": "@图片1", "asset_id": "ASSET-R01", "required": true},
+        {"prompt_token": "@视频1", "asset_id": "ASSET-R02", "required": true},
+        {"prompt_token": "@图片2", "asset_id": "ASSET-R03", "required": true}
+      ],
+      "prompt_brief": "Preserve the exact calendar from @图片1 and follow the door interaction shown by @视频1. A generic hand opens three different numbered doors across three clearly separated reveal beats. Reveal only dinosaur figures visibly supported by @图片2, keeping each figure distinct and preserving calendar state between beats. Do not invent testimonials, extra figures, mechanisms, labels, or readable text.",
+      "fixed_parameters": {
+        "generateCount": 1,
+        "generateAudio": false
+      },
+      "status": "BLOCKED_ASSETS_R01_R02_R03_AND_LIVE_SCHEMA"
+    },
+    {
+      "job_id": "JOB-04",
+      "candidate_tool": "EDITOR_ONLY",
+      "conditional_tool": "submit_seedance_video_with_references",
+      "creative_duration_seconds": 8,
+      "provider_duration_seconds": null,
+      "reference_plan": [
+        {"prompt_token": "@图片1", "asset_id": "ASSET-R03", "required": true}
+      ],
+      "prompt_brief": "Conditional only: use only the exact dinosaur figures visible in @图片1. Present a clean, playful collection-growth plate with subtle camera motion and room for editor compositing. Do not duplicate figures to imply variety, invent unseen figures, or show a complete 24-figure lineup unless the supplied reference itself contains the verified complete lineup.",
+      "fixed_parameters": {
+        "generateCount": 1,
+        "generateAudio": false
+      },
+      "status": "EDITOR_PATH_SELECTED;_CONDITIONAL_GENERATION_REQUIRES_VERIFIED_FULL_LINEUP_AND_LIVE_SCHEMA"
+    },
+    {
+      "job_id": "JOB-05",
+      "candidate_tool": "EDITOR_ONLY",
+      "conditional_tool": "submit_seedance_video_with_references",
+      "creative_duration_seconds": 7,
+      "provider_duration_seconds": 4,
+      "provider_shot_scope": ["S11"],
+      "editor_action": "Build S10 as a four-second editor composition. If ASSET-R04 is supplied, generate a four-second S11 plate and trim it to three seconds; otherwise use the approved static claim-card fallback.",
+      "reference_plan": [
+        {"prompt_token": "@图片1", "asset_id": "ASSET-R03", "required": true},
+        {"prompt_token": "@图片2", "asset_id": "ASSET-R04", "required": false}
+      ],
+      "prompt_brief": "Conditional S11 generation only: show ornament use only when @图片2 is supplied, and reproduce only the supported hanging mechanism. If @图片2 is absent, do not generate; use the approved editor claim-card fallback. No customer testimonial reaction or readable text.",
+      "fixed_parameters": {
+        "generateCount": 1,
+        "generateAudio": false
+      },
+      "status": "EDITOR_PATH_SELECTED;_CONDITIONAL_GENERATION_BLOCKED_ASSET_R04_AND_LIVE_SCHEMA"
+    },
+    {
+      "job_id": "JOB-06",
+      "candidate_tool": "submit_seedance_video_with_references",
+      "creative_duration_seconds": 12,
+      "provider_duration_seconds": 5,
+      "provider_shot_scope": ["S12"],
+      "editor_action": "Build S13's four-second commercial-policy layer and S14's three-second AIP-ready closed-door hold in editing from the stable S12 product hero.",
+      "reference_plan": [
+        {"prompt_token": "@图片1", "asset_id": "ASSET-R01", "required": true},
+        {"prompt_token": "@图片2", "asset_id": "ASSET-R03", "required": true}
+      ],
+      "prompt_brief": "Use @图片1 and @图片2 as strict identity references for a stable product-and-figures hero. Keep generous clean space for editor-owned price, shipping, return, CTA, logo, and subtitle layers. Finish on the same calendar with one closed numbered door isolated as a clear tap target, then hold the clean frame without revealing it. Do not bake in any commercial text.",
+      "fixed_parameters": {
+        "generateCount": 1,
+        "generateAudio": false
+      },
+      "status": "BLOCKED_ASSETS_R01_R03_AND_LIVE_SCHEMA"
+    }
+  ],
+  "first_paid_test_candidates": [
+    {
+      "candidate": "LOWEST_DEPENDENCY",
+      "job_id": "JOB-01",
+      "duration_seconds": 4,
+      "purpose": "Verify text-to-video submission and download flow before product references are bound."
+    },
+    {
+      "candidate": "HIGHEST_PRODUCT_VALUE",
+      "source_job_id": "JOB-02",
+      "duration_seconds": 4,
+      "purpose": "Verify product-reference identity on the exact calendar before producing the full ten-second job.",
+      "blocked_by": ["ASSET-R01", "LIVE_SCHEMA"]
+    }
+  ],
+  "next_gate": {
+    "action": "REINSTALL_PLUGIN_RESTART_AND_INSPECT_LIVE_SCHEMAS",
+    "required_before_any_paid_call": [
+      "Confirm the exact live fields for model, duration, ratio, resolution, generateCount, generateAudio, webSearch, prompt, and reference media.",
+      "Bind exact product-page files to ASSET-R01 through ASSET-R04 as available.",
+      "Present the final payload, unknown-price notice, and generation count to the user.",
+      "Obtain explicit approval for one named submission."
+    ]
+  }
+}
+

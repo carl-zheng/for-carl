@@ -1,0 +1,27 @@
+{
+  "schema_version": "0.1",
+  "test_id": "dinosaur-countdown-kreadoai-binding-v0.1",
+  "status": "active",
+  "inputs": [
+    "production-handoff-v1.json",
+    "../../integrations/kreadoai/platform-profile-v0.1.json"
+  ],
+  "expected_outputs": [
+    "kreadoai-binding-v0.1.json"
+  ],
+  "invariants": [
+    "The source storyboard, script, approved concept, claims, offer, and 50-second timeline remain unchanged.",
+    "The provider is KreadoAI over authenticated MCP, while no media submission is authorized during schema discovery.",
+    "Every provider submission remains prompt-approved, generateCount is capped at one, pricing stays unknown, and deletion remains disabled.",
+    "JOB-01 adapts the approved three-second opening to Seedance's four-second minimum and records an editor trim back to three seconds.",
+    "JOB-02 generates only the seven-second S02-S03 clean product plate; S04 remains an editor-owned three-second callout.",
+    "JOB-03 remains one continuous ten-second reference job so its five-, three-, and two-second reveal beats are not split below Seedance's minimum duration.",
+    "JOB-04 and JOB-05 default to editor-only production; conditional generation cannot invent unseen figures or an unsupported ornament mechanism.",
+    "JOB-06 generates only the five-second S12 clean hero; S13 commercial copy and the S14 AIP-ready closed-door hold remain editor-owned.",
+    "All price, shipping, returns, CTA, logo, subtitle, and other exact-text layers remain outside video generation.",
+    "Actual media inputs, model, resolution, ratio, audio behavior, prompts, frame rate, container, price, and concurrency remain unbound until live schemas, assets, and user approval are available.",
+    "The documented reference-count and duration limits are enforced before any payload can become approvable.",
+    "Polling uses batch_get_video_generation_detail at ten-to-thirty-second intervals and never resubmits automatically."
+  ]
+}
+

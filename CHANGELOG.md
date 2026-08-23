@@ -2,6 +2,14 @@
 
 All notable changes to this repository are documented here.
 
+## KreadoAI production binding 0.1.0 — 2026-08-23
+
+- Bound the dinosaur countdown calendar's provider-neutral handoff to a no-secret KreadoAI Seedance adapter without submitting media.
+- Added per-job routing, Seedance duration adaptations, reference-input constraints, polling behavior, and an explicit zero-generation schema-discovery gate.
+- Kept JOB-04 and JOB-05 editor-first, limited JOB-02 and JOB-06 to clean generated plates, and preserved every exact commercial-text layer for editing.
+- Expanded the local plugin allowlist to the three Seedance submission schemas and one polling schema while retaining prompt approval, one-output cost control, and disabled deletion.
+- Added regression invariants that prevent missing assets, unknown pricing, or unapproved settings from becoming executable payloads.
+
 ## KreadoAI connection verified 0.1.1 — 2026-08-23
 
 - Verified that the installed KreadoAI plugin loads the credential from the local environment and completes an authenticated MCP tool call.
