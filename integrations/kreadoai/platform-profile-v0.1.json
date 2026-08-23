@@ -3,8 +3,8 @@
   "profile_id": "kreadoai-seedance-mcp",
   "profile_version": "0.1.0",
   "provider": "KreadoAI",
-  "binding_status": "PENDING_API_KEY",
-  "verification_status": "ENDPOINT_REACHABLE_AUTH_NOT_VERIFIED",
+  "binding_status": "CONNECTED",
+  "verification_status": "AUTHENTICATED_READ_ONLY_VERIFIED",
   "documentation_source": "KreadoAI MCP技术文档.zip",
   "connection": {
     "mode": "MCP_HTTP",
@@ -20,12 +20,15 @@
       "secret_env": "KREADOAI_API_TOKEN",
       "persist_secret_in_repository": false
     },
-    "authenticated_mcp_initialization": "PENDING_API_KEY",
+    "authenticated_mcp_initialization": "VERIFIED",
     "initial_read_only_verification": {
       "tool": "list_seedance_builtin_virtual_character_labels",
       "purpose": "Verify authenticated read-only tool access without creating media or reading private account details.",
       "creates_remote_task": false,
-      "billing_effect": "NOT_DOCUMENTED_NO_GENERATION_TASK_SUBMITTED"
+      "billing_effect": "NOT_DOCUMENTED_NO_GENERATION_TASK_SUBMITTED",
+      "verified_at": "2026-08-23",
+      "result": "SUCCESS",
+      "response_summary": "KreadoAI returned its built-in label tree for nationality, profession, and gender."
     }
   },
   "seedance": {
@@ -118,7 +121,7 @@
   },
   "neutral_job_mapping": {
     "source_handoff": "tests/dinosaur-countdown-calendar/production-handoff-v1.json",
-    "status": "PENDING_AUTHENTICATED_SCHEMA_VERIFICATION",
+    "status": "AUTHENTICATED_CONNECTION_VERIFIED_GENERATION_SCHEMA_PENDING",
     "rules": [
       {
         "when": "No source reference is required",
@@ -149,3 +152,4 @@
     "Output URL lifetime and credential rotation behavior are not supplied."
   ]
 }
+
