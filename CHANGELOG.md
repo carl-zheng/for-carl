@@ -10,6 +10,7 @@ All notable changes to this repository are documented here.
 - Expanded the local plugin allowlist to the three Seedance submission schemas and one polling schema while retaining prompt approval, one-output cost control, and disabled deletion.
 - Downloaded and inspected all nine Shopify product images, bound usable product, lineup, and ornament references, and prohibited two visibly mismatched calendar products from production.
 - Kept the product's actual door-opening motion as an explicit remaining asset gap because the page supplies static images only.
+- Read the four live KreadoAI tool declarations without invoking submission, resolved their exact field names and public-URL media shape, and drafted non-executable 720P vertical smoke-test payloads.
 - Added regression invariants that prevent missing assets, unknown pricing, or unapproved settings from becoming executable payloads.
 
 ## KreadoAI connection verified 0.1.1 — 2026-08-23

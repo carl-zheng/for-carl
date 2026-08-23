@@ -20,9 +20,10 @@
     "JOB-04 and JOB-05 default to editor-only production; conditional generation cannot invent unseen figures or an unsupported ornament mechanism.",
     "JOB-06 generates only the five-second S12 clean hero; S13 commercial copy and the S14 AIP-ready closed-door hold remain editor-owned.",
     "All price, shipping, returns, CTA, logo, subtitle, and other exact-text layers remain outside video generation.",
-    "Actual media inputs, model, resolution, ratio, audio behavior, prompts, frame rate, container, price, and concurrency remain unbound until live schemas, assets, and user approval are available.",
+    "Live schema fields and public Shopify media URLs may appear in proposed payloads, but every payload remains non-executable until the user explicitly approves one named submission; frame rate, container, price, and concurrency stay unknown.",
     "The documented reference-count and duration limits are enforced before any payload can become approvable.",
     "All nine Shopify product images are recorded, positions 7 and 9 are prohibited as mismatched products, and the remaining door-motion gap is explicit.",
+    "The lowest-dependency and product-identity smoke-test payloads both use four seconds, 720P, 9:16, Doubao-seedance-2, silent output, and generateCount one, with unknown price and authorization false.",
     "Polling uses batch_get_video_generation_detail at ten-to-thirty-second intervals and never resubmits automatically."
   ]
 }

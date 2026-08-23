@@ -16,7 +16,7 @@ The Creative Director owns the advertising idea and evidence boundaries. The Scr
 
 ## Integrations
 
-- [`kreadoai`](integrations/kreadoai/) — no-secret MCP connection and Seedance capability profile. Authenticated read-only access is verified; generation remains approval-locked while live schemas and product assets are bound.
+- [`kreadoai`](integrations/kreadoai/) — no-secret MCP connection and Seedance capability profile. Authentication, live video-tool schemas, and primary product-image bindings are verified; generation remains locked until one named payload is explicitly approved.
 
 For this advertiser's portfolio, content explicitly published on an advertiser-controlled product detail page is approved first-party advertising input. Recognizable subjective or metaphorical advertising exaggeration is also allowed; objective facts must still come from the product page or an explicit user-approved input.
 

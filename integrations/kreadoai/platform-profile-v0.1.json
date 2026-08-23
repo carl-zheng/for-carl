@@ -114,7 +114,7 @@
       "submit_seedance_first_last_video",
       "batch_get_video_generation_detail"
     ],
-    "schema_discovery_invocation_policy": "LOAD_DECLARATIONS_ONLY_DO_NOT_INVOKE_SUBMISSION_TOOLS",
+    "schema_discovery_invocation_policy": "COMPLETED_WITH_DECLARATION_READ_ONLY_NO_SUBMISSION",
     "default_tool_approval_mode": "prompt",
     "disabled_tools": ["delete_seedance_asset_library_assets"],
     "pricing": "NOT_DOCUMENTED_DO_NOT_INVENT",
@@ -128,7 +128,7 @@
   },
   "neutral_job_mapping": {
     "source_handoff": "tests/dinosaur-countdown-calendar/production-handoff-v1.json",
-    "status": "AUTHENTICATED_CONNECTION_VERIFIED_GENERATION_SCHEMA_PENDING",
+    "status": "LIVE_SCHEMAS_VERIFIED_PAYLOAD_APPROVAL_PENDING",
     "rules": [
       {
         "when": "No source reference is required",
@@ -154,9 +154,11 @@
   },
   "documented_unknowns": [
     "Exact pricing and unified concurrency limits are not supplied.",
-    "The text-to-video ratio field is described both as required and as optional with adaptive behavior; verify the live schema.",
     "get_ai_ad_creative_batch_image_detail is described for two advertising-image flows; verify task identifiers in the live schema.",
     "Output URL lifetime and credential rotation behavior are not supplied."
+  ],
+  "resolved_documentation_ambiguities": [
+    "The live text-to-video declaration confirms ratio is optional and omission uses adaptive behavior."
   ]
 }
 

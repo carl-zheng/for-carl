@@ -17,7 +17,7 @@
     "connection_mode": "MCP_HTTP",
     "connection_verification": "AUTHENTICATED_READ_ONLY_VERIFIED"
   },
-  "binding_status": "PLUGIN_UPDATE_READY_NEW_THREAD_REQUIRED",
+  "binding_status": "LIVE_SCHEMAS_VERIFIED_PAYLOADS_DRAFTED_USER_APPROVAL_REQUIRED",
   "execution_status": "NO_MEDIA_SUBMISSION_AUTHORIZED",
   "safety_lock": {
     "current_scope": "CONFIGURE_AND_INSPECT_LIVE_TOOL_SCHEMAS_ONLY",
@@ -38,7 +38,8 @@
       "submit_seedance_first_last_video",
       "batch_get_video_generation_detail"
     ],
-    "purpose": "Load live input schemas after plugin reinstall and restart; do not invoke submission tools during schema discovery.",
+    "purpose": "Keep live declarations available for payload validation; never invoke a submission tool without explicit approval for the named payload.",
+    "live_schema_status": "VERIFIED_WITHOUT_SUBMISSION_ON_2026-08-23",
     "deletion_denylist": [
       "delete_seedance_asset_library_assets"
     ]
@@ -51,7 +52,22 @@
     "video_reference_total_seconds_max": 15,
     "audio_reference_total_seconds_max": 15,
     "prompt_reference_tokens": "Bind exact @图片N, @视频N, and @音频N indices only after the live schema and actual media list are known.",
-    "status": "DOCUMENTED_LIMITS_BOUND_ACTUAL_MEDIA_INPUTS_UNBOUND"
+    "status": "LIVE_SCHEMA_VERIFIED_PUBLIC_URL_BINDING_READY"
+  },
+  "live_schema_verification": {
+    "verified_at": "2026-08-23",
+    "method": "READ_LOADED_TOOL_DECLARATIONS_WITHOUT_INVOCATION",
+    "submission_tools_invoked": false,
+    "verified_fields": {
+      "text_to_video": ["durationSeconds", "generateAudio", "generateCount", "model", "prompt", "ratio", "resolution", "webSearch"],
+      "with_references": ["durationSeconds", "generateAudio", "generateCount", "model", "prompt", "ratio", "referenceImages", "referenceVideos", "referenceAudios", "resolution"],
+      "first_last": ["durationSeconds", "firstImage", "lastImage", "generateAudio", "generateCount", "model", "prompt", "ratio", "resolution"],
+      "polling": ["taskIds"]
+    },
+    "normal_public_media_shape": {
+      "mediaCategory": "normal",
+      "url": "PUBLIC_HTTPS_URL"
+    }
   },
   "polling_contract": {
     "tool": "batch_get_video_generation_detail",
@@ -67,18 +83,18 @@
   "delivery_binding": {
     "aspect_ratio": {
       "recommended": "9:16",
-      "status": "RECOMMENDED_NOT_APPROVED",
+      "status": "LIVE_FIELD_VERIFIED_PROPOSED_NOT_APPROVED",
       "reason": "Primary mobile performance-ad delivery. Preserve an editor-safe center area for alternate crops."
     },
     "model": {
       "recommended_final": "Doubao-seedance-2",
-      "status": "PENDING_LIVE_SCHEMA_AND_USER_APPROVAL",
+      "status": "LIVE_FIELD_VERIFIED_PROPOSED_NOT_APPROVED",
       "reason": "The supplied documentation lists 1080P support only for the standard model; pricing is unknown."
     },
     "resolution": {
       "recommended_smoke_test": "720P",
       "recommended_final": "1080P",
-      "status": "PENDING_MODEL_AND_USER_APPROVAL"
+      "status": "LIVE_FIELD_VERIFIED_PROPOSED_NOT_APPROVED"
     },
     "frame_rate": {
       "value": "UNBOUND",
@@ -91,12 +107,12 @@
     },
     "generate_audio": {
       "recommended": false,
-      "status": "PENDING_LIVE_FIELD_VERIFICATION",
+      "status": "LIVE_FIELD_VERIFIED_PROPOSED_NOT_APPROVED",
       "reason": "Voiceover, music, and sound effects remain editor-owned."
     },
     "web_search": {
       "recommended": false,
-      "status": "PENDING_LIVE_FIELD_VERIFICATION"
+      "status": "LIVE_FIELD_VERIFIED_PROPOSED_NOT_APPROVED"
     },
     "generate_count": {
       "recommended": 1,
@@ -216,7 +232,22 @@
         "generateAudio": false,
         "webSearch": false
       },
-      "status": "READY_AFTER_LIVE_SCHEMA_AND_USER_APPROVAL"
+      "proposed_payload": {
+        "tool": "submit_seedance_text_to_video",
+        "args": {
+          "durationSeconds": 4,
+          "generateAudio": false,
+          "generateCount": 1,
+          "model": "Doubao-seedance-2",
+          "prompt": "Vertical mobile-ad establishing plate in a warm American home on a December morning. Gentle seasonal light and a clearly metaphorical dinosaur-shaped shadow move across the background. No product, people, logos, captions, prices, or readable text. Leave clean center space for an editor-owned headline.",
+          "ratio": "9:16",
+          "resolution": "720P",
+          "webSearch": false
+        },
+        "execution_authorized": false,
+        "price": "UNKNOWN"
+      },
+      "status": "PAYLOAD_DRAFTED_AWAITING_USER_APPROVAL"
     },
     {
       "job_id": "JOB-02",
@@ -226,15 +257,33 @@
       "provider_shot_scope": ["S02", "S03"],
       "editor_action": "Create S04 as a three-second editor freeze/callout so the door-number graphic remains exact and editable.",
       "reference_plan": [
-        {"prompt_token": "@图片1", "asset_id": "ASSET-R01", "required": true},
-        {"prompt_token": "@图片2", "asset_id": "ASSET-G01", "required": false}
+        {"prompt_token": "@图片1", "asset_id": "ASSET-R01", "product_page_position": 3, "required": true},
+        {"prompt_token": "@图片2", "asset_id": "ASSET-R01", "product_page_position": 5, "required": true}
       ],
-      "prompt_brief": "Use @图片1 as the strict product-identity reference. Place the same closed calendar in a restrained seasonal setting derived from @图片2 when supplied. Use a slow hero push-in and subtle parallax while preserving the exact calendar artwork, proportions, numbered-door layout, colors, and packaging. Do not open a door or generate any readable text; callouts remain editor-owned.",
+      "prompt_brief": "Use @图片1 and @图片2 as strict product-identity references. Place the same closed calendar in a restrained seasonal setting. Use a slow hero push-in and subtle parallax while preserving the exact calendar artwork, proportions, numbered-door layout, colors, packaging, and supported figures. Do not open a door or generate any readable text; callouts remain editor-owned.",
       "fixed_parameters": {
         "generateCount": 1,
         "generateAudio": false
       },
-      "status": "BLOCKED_LIVE_SCHEMA_ONLY"
+      "proposed_payload": {
+        "tool": "submit_seedance_video_with_references",
+        "args": {
+          "durationSeconds": 7,
+          "generateAudio": false,
+          "generateCount": 1,
+          "model": "Doubao-seedance-2",
+          "prompt": "Use @图片1 and @图片2 as strict product-identity references. Place the same closed calendar in a restrained seasonal setting. Use a slow hero push-in and subtle parallax while preserving the exact calendar artwork, proportions, numbered-door layout, colors, packaging, and supported figures. Do not open a door or generate any readable text; callouts remain editor-owned.",
+          "ratio": "9:16",
+          "referenceImages": [
+            {"mediaCategory": "normal", "url": "https://cdn.shopify.com/s/files/1/0712/9340/3330/files/sw1849-2.webp?v=1787309373"},
+            {"mediaCategory": "normal", "url": "https://cdn.shopify.com/s/files/1/0712/9340/3330/files/sw1849-4.webp?v=1787309384"}
+          ],
+          "resolution": "720P"
+        },
+        "execution_authorized": false,
+        "price": "UNKNOWN"
+      },
+      "status": "PAYLOAD_DRAFTED_AWAITING_USER_APPROVAL"
     },
     {
       "job_id": "JOB-03",
@@ -251,7 +300,7 @@
         "generateCount": 1,
         "generateAudio": false
       },
-      "status": "BLOCKED_ASSET_R02_MOTION_AND_LIVE_SCHEMA"
+      "status": "BLOCKED_ASSET_R02_MOTION"
     },
     {
       "job_id": "JOB-04",
@@ -267,7 +316,7 @@
         "generateCount": 1,
         "generateAudio": false
       },
-      "status": "EDITOR_PATH_ASSETS_BOUND;_CONDITIONAL_GENERATION_REQUIRES_LIVE_SCHEMA"
+      "status": "EDITOR_PATH_ASSETS_BOUND;_CONDITIONAL_GENERATION_NOT_SELECTED"
     },
     {
       "job_id": "JOB-05",
@@ -286,7 +335,7 @@
         "generateCount": 1,
         "generateAudio": false
       },
-      "status": "EDITOR_PATH_AND_R04_BOUND;_CONDITIONAL_GENERATION_REQUIRES_LIVE_SCHEMA"
+      "status": "EDITOR_PATH_AND_R04_BOUND;_CONDITIONAL_GENERATION_NOT_SELECTED"
     },
     {
       "job_id": "JOB-06",
@@ -304,7 +353,25 @@
         "generateCount": 1,
         "generateAudio": false
       },
-      "status": "BLOCKED_LIVE_SCHEMA_ONLY"
+      "proposed_payload": {
+        "tool": "submit_seedance_video_with_references",
+        "args": {
+          "durationSeconds": 5,
+          "generateAudio": false,
+          "generateCount": 1,
+          "model": "Doubao-seedance-2",
+          "prompt": "Use @图片1 and @图片2 as strict identity references for a stable product-and-figures hero. Keep generous clean space for editor-owned price, shipping, return, CTA, logo, and subtitle layers. Hold a clean, steady product hero without baked-in commercial text.",
+          "ratio": "9:16",
+          "referenceImages": [
+            {"mediaCategory": "normal", "url": "https://cdn.shopify.com/s/files/1/0712/9340/3330/files/sw1849-2.webp?v=1787309373"},
+            {"mediaCategory": "normal", "url": "https://cdn.shopify.com/s/files/1/0712/9340/3330/files/sw1849-4.webp?v=1787309384"}
+          ],
+          "resolution": "720P"
+        },
+        "execution_authorized": false,
+        "price": "UNKNOWN"
+      },
+      "status": "PAYLOAD_DRAFTED_AWAITING_USER_APPROVAL"
     }
   ],
   "first_paid_test_candidates": [
@@ -312,21 +379,40 @@
       "candidate": "LOWEST_DEPENDENCY",
       "job_id": "JOB-01",
       "duration_seconds": 4,
-      "purpose": "Verify text-to-video submission and download flow before product references are bound."
+      "purpose": "Verify text-to-video submission and download flow.",
+      "payload_ref": "job_mappings.JOB-01.proposed_payload",
+      "price": "UNKNOWN",
+      "execution_authorized": false
     },
     {
       "candidate": "HIGHEST_PRODUCT_VALUE",
       "source_job_id": "JOB-02",
       "duration_seconds": 4,
       "purpose": "Verify product-reference identity on the exact calendar before producing the full ten-second job.",
-      "blocked_by": ["LIVE_SCHEMA"]
+      "payload": {
+        "tool": "submit_seedance_video_with_references",
+        "args": {
+          "durationSeconds": 4,
+          "generateAudio": false,
+          "generateCount": 1,
+          "model": "Doubao-seedance-2",
+          "prompt": "Use @图片1 and @图片2 as strict product-identity references. Create a clean vertical hero shot with a very slow push-in. Preserve the exact calendar artwork, proportions, colors, packaging, and supported figures. Keep all doors closed. No people, logos, captions, prices, or readable generated text.",
+          "ratio": "9:16",
+          "referenceImages": [
+            {"mediaCategory": "normal", "url": "https://cdn.shopify.com/s/files/1/0712/9340/3330/files/sw1849-2.webp?v=1787309373"},
+            {"mediaCategory": "normal", "url": "https://cdn.shopify.com/s/files/1/0712/9340/3330/files/sw1849-4.webp?v=1787309384"}
+          ],
+          "resolution": "720P"
+        }
+      },
+      "blocked_by": [],
+      "price": "UNKNOWN",
+      "execution_authorized": false
     }
   ],
   "next_gate": {
-    "action": "REINSTALL_PLUGIN_RESTART_AND_INSPECT_LIVE_SCHEMAS",
+    "action": "PRESENT_ONE_NAMED_TEST_PAYLOAD_AND_UNKNOWN_PRICE_NOTICE_FOR_APPROVAL",
     "required_before_any_paid_call": [
-      "Confirm the exact live fields for model, duration, ratio, resolution, generateCount, generateAudio, webSearch, prompt, and reference media.",
-      "Bind exact product-page files to ASSET-R01 through ASSET-R04 as available.",
       "Present the final payload, unknown-price notice, and generation count to the user.",
       "Obtain explicit approval for one named submission."
     ]

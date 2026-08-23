@@ -7,7 +7,7 @@ This directory binds the platform-neutral production handoff to KreadoAI's HTTP 
 - Connection: `AUTHENTICATED_READ_ONLY_VERIFIED`
 - Endpoint reachability: `VERIFIED` by an unauthenticated HTTP `HEAD` request on 2026-08-23
 - Authenticated MCP initialization and the initial read-only tool call: `VERIFIED` on 2026-08-23
-- Local personal plugin: authenticated and verified; an update is staged to expose the three Seedance submission schemas and one polling schema under prompt approval
+- Local personal plugin: authenticated and verified; three Seedance submission schemas and one polling schema are loaded under prompt approval
 - Secret environment variable: `KREADOAI_API_TOKEN`
 - Repository-stored credentials: prohibited
 
@@ -19,9 +19,9 @@ The initial allowlist exposes only `list_seedance_builtin_virtual_character_labe
 
 Do not submit video, crawl a page, upload or delete assets, synthesize speech, or resubmit a failed job while generation remains locked. Expand the tool allowlist only after the live schemas are inspected. Every media submission remains approval-gated, and the supplied documentation does not contain pricing.
 
-## Generation schema discovery
+## Generation schema discovery — completed
 
-The staged plugin update exposes `submit_seedance_text_to_video`, `submit_seedance_video_with_references`, `submit_seedance_first_last_video`, and `batch_get_video_generation_detail`. This is for loading their live declarations after reinstall and restart. Do not invoke a submission tool during schema discovery. The default approval mode remains `prompt`, generation count remains capped at one until separately approved, and deletion stays disabled.
+The plugin exposes `submit_seedance_text_to_video`, `submit_seedance_video_with_references`, `submit_seedance_first_last_video`, and `batch_get_video_generation_detail`. On 2026-08-23, their live declarations were read without invoking any submission tool. Exact field names, public-URL media inputs, reference indexing, duration, model, resolution, ratio, audio, generation-count, web-search, and polling parameters are now mapped. The default approval mode remains `prompt`, generation count remains capped at one until separately approved, and deletion stays disabled.
 
 ## Production binding
 
