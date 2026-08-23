@@ -2,6 +2,13 @@
 
 All notable changes to this repository are documented here.
 
+## KreadoAI connection verified 0.1.1 — 2026-08-23
+
+- Verified that the installed KreadoAI plugin loads the credential from the local environment and completes an authenticated MCP tool call.
+- Used only the public built-in Seedance label-tree query; no media task, crawl, upload, account-private-data request, resubmission, or deletion was performed.
+- Kept every generation and remote-write capability locked behind a future explicit approval, with deletion disabled.
+- Updated the no-secret platform profile to record successful read-only verification while leaving generation-schema binding pending.
+
 ## KreadoAI connection scaffold 0.1.0 — 2026-08-23
 
 - Added a no-secret KreadoAI MCP platform profile for the user's selected video-production provider.
@@ -41,3 +48,4 @@ All notable changes to this repository are documented here.
 - Added the experimental `applovin-creative-director` skill.
 - Added evidence handling, creative framework, and concept brief references.
 - Established a strategy-only boundary before downstream scriptwriting and production.
+
