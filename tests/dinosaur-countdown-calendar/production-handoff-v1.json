@@ -36,47 +36,64 @@
     {
       "asset_id": "ASSET-P01",
       "requirement_status": "REQUIRED",
-      "access_state": "OBSERVED_NOT_SUPPLIED",
-      "inspection_state": "PARTIALLY_INSPECTED",
+      "access_state": "DOWNLOADED_LOCAL",
+      "inspection_state": "VISUALLY_INSPECTED",
       "origin": "product_page",
       "role": "source image set and continuity reference",
-      "transfer_requirement": "Select and export exact files during platform binding."
+      "transfer_requirement": "Use only files selected by product-page-asset-manifest-v1.json; positions 7 and 9 are prohibited product mismatches.",
+      "source_manifest": "tests/dinosaur-countdown-calendar/product-page-asset-manifest-v1.json"
     },
     {
       "asset_id": "ASSET-R01",
       "requirement_status": "REQUIRED",
-      "access_state": "NOT_SUPPLIED",
-      "inspection_state": "NOT_INSPECTED",
+      "access_state": "BOUND_FROM_PRODUCT_PAGE",
+      "inspection_state": "VISUALLY_INSPECTED",
       "origin": "product_page_selection",
       "role": "master calendar identity, still, and motion reference",
-      "transfer_requirement": "Upload or remote-reference according to the verified platform profile."
+      "transfer_requirement": "Bind the selected clean product references after the live MediaInput schema is verified.",
+      "bound_files": [
+        "assets/product-page/03-sw1849-2.webp",
+        "assets/product-page/05-sw1849-4.webp"
+      ]
     },
     {
       "asset_id": "ASSET-R02",
       "requirement_status": "REQUIRED",
-      "access_state": "NOT_SUPPLIED",
-      "inspection_state": "NOT_INSPECTED",
+      "access_state": "STATIC_PAGE_REFERENCES_ONLY",
+      "inspection_state": "VISUALLY_INSPECTED_STATIC_ONLY",
       "origin": "product_page_or_real_capture",
       "role": "numbered-door reveal motion reference",
-      "transfer_requirement": "Supply before JOB-03 production."
+      "transfer_requirement": "Supply faithful door-opening video before JOB-03, or separately approve a static-to-motion test.",
+      "bound_static_files": [
+        "assets/product-page/01-SW1849.webp",
+        "assets/product-page/04-sw1849-3.webp"
+      ]
     },
     {
       "asset_id": "ASSET-R03",
       "requirement_status": "REQUIRED",
-      "access_state": "NOT_SUPPLIED",
-      "inspection_state": "NOT_INSPECTED",
+      "access_state": "BOUND_FROM_PRODUCT_PAGE",
+      "inspection_state": "VISUALLY_INSPECTED_WITH_PAGE_MISMATCH_GUARD",
       "origin": "product_page_selection_or_real_capture",
       "role": "figure identity, growing collection, and no-repeat proof",
-      "transfer_requirement": "Supply before JOB-03 through JOB-06 production."
+      "transfer_requirement": "Use only the selected lineup files; never use product-page positions 7 or 9.",
+      "bound_files": [
+        "assets/product-page/05-sw1849-4.webp",
+        "assets/product-page/06-sw1849-5.webp"
+      ]
     },
     {
       "asset_id": "ASSET-R04",
       "requirement_status": "REQUIRED_WITH_FALLBACK",
-      "access_state": "NOT_SUPPLIED",
-      "inspection_state": "NOT_INSPECTED",
+      "access_state": "BOUND_FROM_PRODUCT_PAGE",
+      "inspection_state": "VISUALLY_INSPECTED",
       "origin": "product_page_selection_or_real_capture",
       "role": "ornament-use visual proof",
-      "transfer_requirement": "Supply before JOB-05 or use the approved editor claim-card fallback."
+      "transfer_requirement": "Use the selected hanging-loop references, or retain the approved editor claim-card fallback.",
+      "bound_files": [
+        "assets/product-page/03-sw1849-2.webp",
+        "assets/product-page/05-sw1849-4.webp"
+      ]
     },
     {
       "asset_id": "ASSET-G01",

@@ -4,6 +4,7 @@
   "status": "active",
   "inputs": [
     "production-handoff-v1.json",
+    "product-page-asset-manifest-v1.json",
     "../../integrations/kreadoai/platform-profile-v0.1.json"
   ],
   "expected_outputs": [
@@ -21,6 +22,7 @@
     "All price, shipping, returns, CTA, logo, subtitle, and other exact-text layers remain outside video generation.",
     "Actual media inputs, model, resolution, ratio, audio behavior, prompts, frame rate, container, price, and concurrency remain unbound until live schemas, assets, and user approval are available.",
     "The documented reference-count and duration limits are enforced before any payload can become approvable.",
+    "All nine Shopify product images are recorded, positions 7 and 9 are prohibited as mismatched products, and the remaining door-motion gap is explicit.",
     "Polling uses batch_get_video_generation_detail at ten-to-thirty-second intervals and never resubmits automatically."
   ]
 }

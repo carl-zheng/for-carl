@@ -117,6 +117,13 @@
   },
   "asset_binding": [
     {
+      "asset_id": "ASSET-P01",
+      "provider_role": "SOURCE_PAGE_MEDIA_SET",
+      "status": "DOWNLOADED_AND_INSPECTED",
+      "source_manifest": "tests/dinosaur-countdown-calendar/product-page-asset-manifest-v1.json",
+      "prohibited_positions": [7, 9]
+    },
+    {
       "asset_id": "ASSET-G01",
       "provider_role": "GENERATED_OR_EDITOR_SEASONAL_BACKGROUND",
       "status": "OPTIONAL_GENERATION_CANDIDATE",
@@ -125,25 +132,41 @@
     {
       "asset_id": "ASSET-R01",
       "provider_role": "PRIMARY_PRODUCT_IDENTITY_IMAGE",
-      "status": "BLOCKED_PENDING_EXACT_PRODUCT_PAGE_FILE",
+      "status": "BOUND_PRODUCT_PAGE_FILES_PENDING_LIVE_MEDIAINPUT_SCHEMA",
+      "files": [
+        "assets/product-page/03-sw1849-2.webp",
+        "assets/product-page/05-sw1849-4.webp"
+      ],
       "used_by": ["JOB-02", "JOB-03", "JOB-06"]
     },
     {
       "asset_id": "ASSET-R02",
       "provider_role": "DOOR_REVEAL_MOTION_REFERENCE",
-      "status": "BLOCKED_PENDING_PAGE_MEDIA_OR_REAL_CAPTURE",
+      "status": "BLOCKED_MOTION_REFERENCE_STATIC_PAGE_REFERENCES_ONLY",
+      "static_files": [
+        "assets/product-page/01-SW1849.webp",
+        "assets/product-page/04-sw1849-3.webp"
+      ],
       "used_by": ["JOB-03"]
     },
     {
       "asset_id": "ASSET-R03",
       "provider_role": "FIGURE_IDENTITY_AND_LINEUP_REFERENCE",
-      "status": "BLOCKED_PENDING_EXACT_PRODUCT_PAGE_FILES",
+      "status": "BOUND_WITH_PAGE_MISMATCH_GUARD_PENDING_LIVE_MEDIAINPUT_SCHEMA",
+      "files": [
+        "assets/product-page/05-sw1849-4.webp",
+        "assets/product-page/06-sw1849-5.webp"
+      ],
       "used_by": ["JOB-03", "JOB-04", "JOB-05", "JOB-06"]
     },
     {
       "asset_id": "ASSET-R04",
       "provider_role": "ORNAMENT_USE_REFERENCE",
-      "status": "OPTIONAL_WITH_EDITOR_CLAIM_CARD_FALLBACK",
+      "status": "BOUND_PRODUCT_PAGE_FILES_WITH_EDITOR_CLAIM_CARD_FALLBACK",
+      "files": [
+        "assets/product-page/03-sw1849-2.webp",
+        "assets/product-page/05-sw1849-4.webp"
+      ],
       "used_by": ["JOB-05"]
     },
     {
@@ -195,7 +218,7 @@
         "generateCount": 1,
         "generateAudio": false
       },
-      "status": "BLOCKED_ASSET_R01_AND_LIVE_SCHEMA"
+      "status": "BLOCKED_LIVE_SCHEMA_ONLY"
     },
     {
       "job_id": "JOB-03",
@@ -212,7 +235,7 @@
         "generateCount": 1,
         "generateAudio": false
       },
-      "status": "BLOCKED_ASSETS_R01_R02_R03_AND_LIVE_SCHEMA"
+      "status": "BLOCKED_ASSET_R02_MOTION_AND_LIVE_SCHEMA"
     },
     {
       "job_id": "JOB-04",
@@ -228,7 +251,7 @@
         "generateCount": 1,
         "generateAudio": false
       },
-      "status": "EDITOR_PATH_SELECTED;_CONDITIONAL_GENERATION_REQUIRES_VERIFIED_FULL_LINEUP_AND_LIVE_SCHEMA"
+      "status": "EDITOR_PATH_ASSETS_BOUND;_CONDITIONAL_GENERATION_REQUIRES_LIVE_SCHEMA"
     },
     {
       "job_id": "JOB-05",
@@ -247,7 +270,7 @@
         "generateCount": 1,
         "generateAudio": false
       },
-      "status": "EDITOR_PATH_SELECTED;_CONDITIONAL_GENERATION_BLOCKED_ASSET_R04_AND_LIVE_SCHEMA"
+      "status": "EDITOR_PATH_AND_R04_BOUND;_CONDITIONAL_GENERATION_REQUIRES_LIVE_SCHEMA"
     },
     {
       "job_id": "JOB-06",
@@ -265,7 +288,7 @@
         "generateCount": 1,
         "generateAudio": false
       },
-      "status": "BLOCKED_ASSETS_R01_R03_AND_LIVE_SCHEMA"
+      "status": "BLOCKED_LIVE_SCHEMA_ONLY"
     }
   ],
   "first_paid_test_candidates": [
@@ -280,7 +303,7 @@
       "source_job_id": "JOB-02",
       "duration_seconds": 4,
       "purpose": "Verify product-reference identity on the exact calendar before producing the full ten-second job.",
-      "blocked_by": ["ASSET-R01", "LIVE_SCHEMA"]
+      "blocked_by": ["LIVE_SCHEMA"]
     }
   ],
   "next_gate": {

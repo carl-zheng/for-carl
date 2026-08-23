@@ -8,6 +8,8 @@ All notable changes to this repository are documented here.
 - Added per-job routing, Seedance duration adaptations, reference-input constraints, polling behavior, and an explicit zero-generation schema-discovery gate.
 - Kept JOB-04 and JOB-05 editor-first, limited JOB-02 and JOB-06 to clean generated plates, and preserved every exact commercial-text layer for editing.
 - Expanded the local plugin allowlist to the three Seedance submission schemas and one polling schema while retaining prompt approval, one-output cost control, and disabled deletion.
+- Downloaded and inspected all nine Shopify product images, bound usable product, lineup, and ornament references, and prohibited two visibly mismatched calendar products from production.
+- Kept the product's actual door-opening motion as an explicit remaining asset gap because the page supplies static images only.
 - Added regression invariants that prevent missing assets, unknown pricing, or unapproved settings from becoming executable payloads.
 
 ## KreadoAI connection verified 0.1.1 — 2026-08-23

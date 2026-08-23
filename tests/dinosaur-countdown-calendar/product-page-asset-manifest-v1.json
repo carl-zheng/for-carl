@@ -1,0 +1,126 @@
+{
+  "schema_version": "1.0",
+  "manifest_id": "dac-product-page-assets-v1",
+  "captured_at": "2026-08-23",
+  "product_url": "https://vexroan.com/products/dinosaur-adventure-blind-box-countdown-calendar",
+  "shopify_product_json": "https://vexroan.com/products/dinosaur-adventure-blind-box-countdown-calendar.js",
+  "product_id": 8775750975682,
+  "product_title": "Dinosaur Adventure Blind-Box Countdown Calendar",
+  "price_minor_units_snapshot": 3590,
+  "currency": "USD",
+  "local_directory": "tests/dinosaur-countdown-calendar/assets/product-page",
+  "inspection_status": "NINE_DOWNLOADED_AND_VISUALLY_INSPECTED",
+  "assets": [
+    {
+      "position": 1,
+      "file": "assets/product-page/01-SW1849.webp",
+      "source_url": "https://cdn.shopify.com/s/files/1/0712/9340/3330/files/SW1849.webp?v=1787309364",
+      "width": 800,
+      "height": 800,
+      "decision": "SELECT_SUPPORT",
+      "roles": ["ASSET-R01", "ASSET-R02-STATIC", "ASSET-R03", "ASSET-R04"],
+      "notes": "Numbered-door calendar, multiple opened-door examples, figures, and visible hanging loops; promotional text is baked into the source."
+    },
+    {
+      "position": 2,
+      "file": "assets/product-page/02-sw1849-1.webp",
+      "source_url": "https://cdn.shopify.com/s/files/1/0712/9340/3330/files/sw1849-1.webp?v=1787309369",
+      "width": 1600,
+      "height": 1600,
+      "decision": "CONDITIONAL_LIFESTYLE",
+      "roles": ["ASSET-R01-SUPPORT", "ASSET-R02-STATIC", "ASSET-R03-SUPPORT"],
+      "notes": "Page-provided child-reaction lifestyle scene with an opened door and several figures; do not use as the master product-identity reference."
+    },
+    {
+      "position": 3,
+      "file": "assets/product-page/03-sw1849-2.webp",
+      "source_url": "https://cdn.shopify.com/s/files/1/0712/9340/3330/files/sw1849-2.webp?v=1787309373",
+      "width": 1600,
+      "height": 1600,
+      "decision": "SELECT_PRIMARY",
+      "roles": ["ASSET-R01", "ASSET-R03", "ASSET-R04"],
+      "notes": "Clean closed-calendar hero with a broad figure lineup and clearly visible red or blue hanging loops; preferred product and ornament reference."
+    },
+    {
+      "position": 4,
+      "file": "assets/product-page/04-sw1849-3.webp",
+      "source_url": "https://cdn.shopify.com/s/files/1/0712/9340/3330/files/sw1849-3.webp?v=1787309376",
+      "width": 1600,
+      "height": 1600,
+      "decision": "SELECT_STATIC_DOOR_REFERENCE",
+      "roles": ["ASSET-R01-SUPPORT", "ASSET-R02-STATIC", "ASSET-R03-SUPPORT", "ASSET-R04-SUPPORT"],
+      "notes": "Shows the outer cover, numbered inner door panel, opened compartments, figures, and one loop being held; page lifestyle subjects are not product-identity controls."
+    },
+    {
+      "position": 5,
+      "file": "assets/product-page/05-sw1849-4.webp",
+      "source_url": "https://cdn.shopify.com/s/files/1/0712/9340/3330/files/sw1849-4.webp?v=1787309384",
+      "width": 1254,
+      "height": 1254,
+      "decision": "SELECT_PRIMARY_LINEUP",
+      "roles": ["ASSET-R01", "ASSET-R03", "ASSET-R04"],
+      "notes": "White-background product and lineup reference with hanging loops; use for figure identity, but do not let generation add or alter labels."
+    },
+    {
+      "position": 6,
+      "file": "assets/product-page/06-sw1849-5.webp",
+      "source_url": "https://cdn.shopify.com/s/files/1/0712/9340/3330/files/sw1849-5.webp?v=1787309388",
+      "width": 1600,
+      "height": 1600,
+      "decision": "SELECT_SUPPORT_LINEUP",
+      "roles": ["ASSET-R01-SUPPORT", "ASSET-R03", "ASSET-R04"],
+      "notes": "Large seasonal lineup and hanging-loop reference; baked promotional copy remains editor-excluded."
+    },
+    {
+      "position": 7,
+      "file": "assets/product-page/07-sw1849-6.webp",
+      "source_url": "https://cdn.shopify.com/s/files/1/0712/9340/3330/files/sw1849-6.webp?v=1787309392",
+      "width": 796,
+      "height": 820,
+      "decision": "EXCLUDE_PRODUCT_MISMATCH",
+      "roles": [],
+      "notes": "Different Jurassic Park-branded 2026 calendar, packaging, and figure set. Never use for this production."
+    },
+    {
+      "position": 8,
+      "file": "assets/product-page/08-sw1849-7.webp",
+      "source_url": "https://cdn.shopify.com/s/files/1/0712/9340/3330/files/sw1849-7.webp?v=1787309396",
+      "width": 1600,
+      "height": 1600,
+      "decision": "CONDITIONAL_LIFESTYLE",
+      "roles": ["ASSET-R01-SUPPORT"],
+      "notes": "Page-provided adult-and-child gift scene with the closed product box; usable as mood support, not as master product identity or testimonial evidence."
+    },
+    {
+      "position": 9,
+      "file": "assets/product-page/09-sw1849-8.webp",
+      "source_url": "https://cdn.shopify.com/s/files/1/0712/9340/3330/files/sw1849-8.webp?v=1787309399",
+      "width": 1600,
+      "height": 1600,
+      "decision": "EXCLUDE_PRODUCT_MISMATCH",
+      "roles": [],
+      "notes": "Different black Jurassic Winter calendar and unrelated character set. Never use for this production."
+    }
+  ],
+  "selected_bindings": {
+    "ASSET-R01": [
+      "assets/product-page/03-sw1849-2.webp",
+      "assets/product-page/05-sw1849-4.webp"
+    ],
+    "ASSET-R02-STATIC_ONLY": [
+      "assets/product-page/01-SW1849.webp",
+      "assets/product-page/04-sw1849-3.webp"
+    ],
+    "ASSET-R03": [
+      "assets/product-page/05-sw1849-4.webp",
+      "assets/product-page/06-sw1849-5.webp"
+    ],
+    "ASSET-R04": [
+      "assets/product-page/03-sw1849-2.webp",
+      "assets/product-page/05-sw1849-4.webp"
+    ]
+  },
+  "excluded_positions": [7, 9],
+  "remaining_gap": "No product-page video is present. ASSET-R02 still requires faithful door-opening video or a separately approved static-to-motion approach."
+}
+
