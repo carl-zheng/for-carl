@@ -104,20 +104,44 @@
   ],
   "selected_bindings": {
     "ASSET-R01": [
-      "assets/product-page/03-sw1849-2.webp",
-      "assets/product-page/05-sw1849-4.webp"
+      {
+        "local_cache": "assets/product-page/03-sw1849-2.webp",
+        "source_url": "https://cdn.shopify.com/s/files/1/0712/9340/3330/files/sw1849-2.webp?v=1787309373"
+      },
+      {
+        "local_cache": "assets/product-page/05-sw1849-4.webp",
+        "source_url": "https://cdn.shopify.com/s/files/1/0712/9340/3330/files/sw1849-4.webp?v=1787309384"
+      }
     ],
     "ASSET-R02-STATIC_ONLY": [
-      "assets/product-page/01-SW1849.webp",
-      "assets/product-page/04-sw1849-3.webp"
+      {
+        "local_cache": "assets/product-page/01-SW1849.webp",
+        "source_url": "https://cdn.shopify.com/s/files/1/0712/9340/3330/files/SW1849.webp?v=1787309364"
+      },
+      {
+        "local_cache": "assets/product-page/04-sw1849-3.webp",
+        "source_url": "https://cdn.shopify.com/s/files/1/0712/9340/3330/files/sw1849-3.webp?v=1787309376"
+      }
     ],
     "ASSET-R03": [
-      "assets/product-page/05-sw1849-4.webp",
-      "assets/product-page/06-sw1849-5.webp"
+      {
+        "local_cache": "assets/product-page/05-sw1849-4.webp",
+        "source_url": "https://cdn.shopify.com/s/files/1/0712/9340/3330/files/sw1849-4.webp?v=1787309384"
+      },
+      {
+        "local_cache": "assets/product-page/06-sw1849-5.webp",
+        "source_url": "https://cdn.shopify.com/s/files/1/0712/9340/3330/files/sw1849-5.webp?v=1787309388"
+      }
     ],
     "ASSET-R04": [
-      "assets/product-page/03-sw1849-2.webp",
-      "assets/product-page/05-sw1849-4.webp"
+      {
+        "local_cache": "assets/product-page/03-sw1849-2.webp",
+        "source_url": "https://cdn.shopify.com/s/files/1/0712/9340/3330/files/sw1849-2.webp?v=1787309373"
+      },
+      {
+        "local_cache": "assets/product-page/05-sw1849-4.webp",
+        "source_url": "https://cdn.shopify.com/s/files/1/0712/9340/3330/files/sw1849-4.webp?v=1787309384"
+      }
     ]
   },
   "excluded_positions": [7, 9],

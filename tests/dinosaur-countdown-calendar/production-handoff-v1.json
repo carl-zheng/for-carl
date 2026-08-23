@@ -51,9 +51,13 @@
       "origin": "product_page_selection",
       "role": "master calendar identity, still, and motion reference",
       "transfer_requirement": "Bind the selected clean product references after the live MediaInput schema is verified.",
-      "bound_files": [
+      "local_cache_files": [
         "assets/product-page/03-sw1849-2.webp",
         "assets/product-page/05-sw1849-4.webp"
+      ],
+      "bound_source_urls": [
+        "https://cdn.shopify.com/s/files/1/0712/9340/3330/files/sw1849-2.webp?v=1787309373",
+        "https://cdn.shopify.com/s/files/1/0712/9340/3330/files/sw1849-4.webp?v=1787309384"
       ]
     },
     {
@@ -67,6 +71,10 @@
       "bound_static_files": [
         "assets/product-page/01-SW1849.webp",
         "assets/product-page/04-sw1849-3.webp"
+      ],
+      "bound_static_source_urls": [
+        "https://cdn.shopify.com/s/files/1/0712/9340/3330/files/SW1849.webp?v=1787309364",
+        "https://cdn.shopify.com/s/files/1/0712/9340/3330/files/sw1849-3.webp?v=1787309376"
       ]
     },
     {
@@ -77,9 +85,13 @@
       "origin": "product_page_selection_or_real_capture",
       "role": "figure identity, growing collection, and no-repeat proof",
       "transfer_requirement": "Use only the selected lineup files; never use product-page positions 7 or 9.",
-      "bound_files": [
+      "local_cache_files": [
         "assets/product-page/05-sw1849-4.webp",
         "assets/product-page/06-sw1849-5.webp"
+      ],
+      "bound_source_urls": [
+        "https://cdn.shopify.com/s/files/1/0712/9340/3330/files/sw1849-4.webp?v=1787309384",
+        "https://cdn.shopify.com/s/files/1/0712/9340/3330/files/sw1849-5.webp?v=1787309388"
       ]
     },
     {
@@ -90,9 +102,13 @@
       "origin": "product_page_selection_or_real_capture",
       "role": "ornament-use visual proof",
       "transfer_requirement": "Use the selected hanging-loop references, or retain the approved editor claim-card fallback.",
-      "bound_files": [
+      "local_cache_files": [
         "assets/product-page/03-sw1849-2.webp",
         "assets/product-page/05-sw1849-4.webp"
+      ],
+      "bound_source_urls": [
+        "https://cdn.shopify.com/s/files/1/0712/9340/3330/files/sw1849-2.webp?v=1787309373",
+        "https://cdn.shopify.com/s/files/1/0712/9340/3330/files/sw1849-4.webp?v=1787309384"
       ]
     },
     {
