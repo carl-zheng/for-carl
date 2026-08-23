@@ -2,6 +2,16 @@
 
 All notable changes to this repository are documented here.
 
+## KreadoAI product-consistency smoke test 0.1.1 — 2026-08-23
+
+- Submitted exactly one explicitly approved reference-video task and performed no retry: KreadoAI task `192751`.
+- Used `Doubao-seedance-mini-2`, 720P, 9:16, four seconds, silent audio, and one generated output from the two selected product-page references.
+- Recorded the successful 720×1280 output URL and local filename `dinosaur-calendar-product-consistency-mini2-720p-task-192751.mp4`; the downloaded file passed a full decode and SHA-256 integrity check.
+- Completed visual QA with `CONDITIONAL_PASS_PACKAGING_HERO_ONLY`: packaging, palette, closed presentation, and slow push-in remained stable without people or added commercial copy.
+- Prohibited using this plate as proof of the full 24-piece lineup because only a partial subset of dinosaur ornaments appears in the generated composition.
+- Recorded provider `taskAmount` as `24.00` with an unknown unit; no currency or credit interpretation was inferred.
+- Marked the one-task approval as consumed. Any retry or further generation requires a fresh, named payload approval.
+
 ## KreadoAI production binding 0.1.0 — 2026-08-23
 
 - Bound the dinosaur countdown calendar's provider-neutral handoff to a no-secret KreadoAI Seedance adapter without submitting media.
@@ -59,4 +69,3 @@ All notable changes to this repository are documented here.
 - Added the experimental `applovin-creative-director` skill.
 - Added evidence handling, creative framework, and concept brief references.
 - Established a strategy-only boundary before downstream scriptwriting and production.
-

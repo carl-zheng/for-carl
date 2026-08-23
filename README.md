@@ -16,11 +16,10 @@ The Creative Director owns the advertising idea and evidence boundaries. The Scr
 
 ## Integrations
 
-- [`kreadoai`](integrations/kreadoai/) — no-secret MCP connection and Seedance capability profile. Authentication, live video-tool schemas, and primary product-image bindings are verified; generation remains locked until one named payload is explicitly approved.
+- [`kreadoai`](integrations/kreadoai/) — no-secret MCP connection and Seedance capability profile. Authentication, live schemas, and product-image bindings are verified. One explicitly approved Mini/720P product-consistency test succeeded with a conditional packaging-hero QA pass; that approval is consumed, so any retry or further generation requires a new named approval.
 
 For this advertiser's portfolio, content explicitly published on an advertiser-controlled product detail page is approved first-party advertising input. Recognizable subjective or metaphorical advertising exaggeration is also allowed; objective facts must still come from the product page or an explicit user-approved input.
 
 ## Regression tests
 
 - [`dinosaur-countdown-calendar`](tests/dinosaur-countdown-calendar/) — complete Product Truth → Creative Brief → Script → Storyboard → platform-neutral handoff → KreadoAI binding test for the United States market, with explicit claim, offer, timing, continuity, asset, provider-routing, and approval invariants.
-

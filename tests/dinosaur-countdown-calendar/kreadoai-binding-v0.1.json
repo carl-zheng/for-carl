@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1",
   "binding_id": "dac-us-24-mornings-kreadoai-binding-v0.1",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "source_handoff": {
     "path": "tests/dinosaur-countdown-calendar/production-handoff-v1.json",
     "handoff_id": "dac-us-24-mornings-production-handoff-v1",
@@ -17,10 +17,10 @@
     "connection_mode": "MCP_HTTP",
     "connection_verification": "AUTHENTICATED_READ_ONLY_VERIFIED"
   },
-  "binding_status": "LIVE_SCHEMAS_VERIFIED_PAYLOADS_DRAFTED_USER_APPROVAL_REQUIRED",
-  "execution_status": "NO_MEDIA_SUBMISSION_AUTHORIZED",
+  "binding_status": "FIRST_PAID_PRODUCT_CONSISTENCY_TEST_COMPLETED_CONDITIONAL_PASS",
+  "execution_status": "ONE_APPROVED_MEDIA_SUBMISSION_SUCCEEDED_NO_RETRY",
   "safety_lock": {
-    "current_scope": "CONFIGURE_AND_INSPECT_LIVE_TOOL_SCHEMAS_ONLY",
+    "current_scope": "POST_GENERATION_REVIEW_ONLY_NO_FURTHER_SUBMISSION_AUTHORIZED",
     "media_submission_authorized": false,
     "remote_asset_creation_authorized": false,
     "web_crawl_authorized": false,
@@ -28,7 +28,7 @@
     "deletion_enabled": false,
     "default_tool_approval_mode": "prompt",
     "generate_count_cap_before_separate_approval": 1,
-    "pricing_status": "UNKNOWN_DO_NOT_INVENT"
+    "pricing_status": "TASK_AMOUNT_24.00_UNIT_UNKNOWN_DO_NOT_INFER_CURRENCY"
   },
   "plugin_tool_plan": {
     "configured_allowlist": [
@@ -80,6 +80,63 @@
     },
     "automatic_resubmission": false
   },
+  "generation_executions": [
+    {
+      "provider_task_id": 192751,
+      "source_job_id": "JOB-02",
+      "purpose": "PRODUCT_IDENTITY_CONSISTENCY_SMOKE_TEST",
+      "tool": "submit_seedance_video_with_references",
+      "approval_status": "EXPLICIT_ONE_TASK_APPROVAL_CONSUMED",
+      "submission_attempts": 1,
+      "resubmitted": false,
+      "submitted_at": "2026-08-23 08:44:47",
+      "submitted_args": {
+        "durationSeconds": 4,
+        "generateAudio": false,
+        "generateCount": 1,
+        "model": "Doubao-seedance-mini-2",
+        "prompt": "Use @图片1 and @图片2 as strict product-identity references. Create a clean vertical hero shot with a very slow push-in. Preserve the exact advent calendar artwork, proportions, orange-and-black colors, packaging, dinosaur designs, and supported figures. Keep the product centered and all doors closed. No people, reactions, logos, captions, prices, policy text, or newly generated readable text.",
+        "ratio": "9:16",
+        "referenceImages": [
+          {"mediaCategory": "normal", "url": "https://cdn.shopify.com/s/files/1/0712/9340/3330/files/sw1849-2.webp?v=1787309373"},
+          {"mediaCategory": "normal", "url": "https://cdn.shopify.com/s/files/1/0712/9340/3330/files/sw1849-4.webp?v=1787309384"}
+        ],
+        "resolution": "720P"
+      },
+      "status": "SUCCEEDED_CONDITIONAL_PASS",
+      "provider_result": {
+        "taskStatus": 2,
+        "taskAmount": "24.00",
+        "taskAmountUnit": "UNKNOWN_DO_NOT_INFER",
+        "videoUrl": "https://aigc-cdn.kreadoai.com/digitalhuman/video/2026/8/6346c8e3c87b449ca048f6950b3fd715.mp4",
+        "videoWidth": 720,
+        "videoHeight": 1280,
+        "videoDuration": 4
+      },
+      "local_output": {
+        "filename": "dinosaur-calendar-product-consistency-mini2-720p-task-192751.mp4",
+        "byte_length": 3436760,
+        "sha256": "D9E147280C79259D5748E721343F138FCF7260FB792472FB790186F42FFDDA27",
+        "repository_storage": "NOT_COMMITTED_BINARY_DELIVERABLE"
+      },
+      "qa": {
+        "status": "COMPLETED",
+        "verdict": "CONDITIONAL_PASS_PACKAGING_HERO_ONLY",
+        "method": "FULL_DECODE_PLUS_FOUR_REPRESENTATIVE_FRAMES_AT_ONE_SECOND_INTERVALS",
+        "passed_checks": [
+          "VERTICAL_720_BY_1280_OUTPUT",
+          "SLOW_STABLE_PUSH_IN",
+          "PACKAGING_COMPOSITION_AND_ORANGE_BLACK_PALETTE_RETAINED",
+          "OUTER_CALENDAR_PRESENTATION_REMAINS_CLOSED",
+          "NO_PEOPLE_REACTIONS_PRICES_POLICY_COPY_OR_EXTRA_CAPTIONS",
+          "NO_OBVIOUS_FRAME_TO_FRAME_PRODUCT_MORPHING_IN_SAMPLED_FRAMES"
+        ],
+        "limitation": "Only a partial subset of dinosaur ornaments is shown; this output does not verify or prove the complete 24-piece lineup.",
+        "approved_use": "PACKAGING_HERO_PLATE",
+        "prohibited_use": "COMPLETE_CONTENTS_OR_24_FIGURE_LINEUP_PROOF"
+      }
+    }
+  ],
   "delivery_binding": {
     "aspect_ratio": {
       "recommended": "9:16",
@@ -148,7 +205,7 @@
     {
       "asset_id": "ASSET-R01",
       "provider_role": "PRIMARY_PRODUCT_IDENTITY_IMAGE",
-      "status": "BOUND_PRODUCT_PAGE_FILES_PENDING_LIVE_MEDIAINPUT_SCHEMA",
+      "status": "BOUND_AND_USED_BY_SUCCESSFUL_TASK_192751",
       "local_cache_files": [
         "assets/product-page/03-sw1849-2.webp",
         "assets/product-page/05-sw1849-4.webp"
@@ -395,8 +452,8 @@
           "durationSeconds": 4,
           "generateAudio": false,
           "generateCount": 1,
-          "model": "Doubao-seedance-2",
-          "prompt": "Use @图片1 and @图片2 as strict product-identity references. Create a clean vertical hero shot with a very slow push-in. Preserve the exact calendar artwork, proportions, colors, packaging, and supported figures. Keep all doors closed. No people, logos, captions, prices, or readable generated text.",
+          "model": "Doubao-seedance-mini-2",
+          "prompt": "Use @图片1 and @图片2 as strict product-identity references. Create a clean vertical hero shot with a very slow push-in. Preserve the exact advent calendar artwork, proportions, orange-and-black colors, packaging, dinosaur designs, and supported figures. Keep the product centered and all doors closed. No people, reactions, logos, captions, prices, policy text, or newly generated readable text.",
           "ratio": "9:16",
           "referenceImages": [
             {"mediaCategory": "normal", "url": "https://cdn.shopify.com/s/files/1/0712/9340/3330/files/sw1849-2.webp?v=1787309373"},
@@ -407,15 +464,18 @@
       },
       "blocked_by": [],
       "price": "UNKNOWN",
-      "execution_authorized": false
+      "execution_authorized": false,
+      "authorization_status": "CONSUMED_BY_TASK_192751",
+      "status": "SUCCEEDED_CONDITIONAL_PASS",
+      "execution_result_ref": "generation_executions[0]"
     }
   ],
   "next_gate": {
-    "action": "PRESENT_ONE_NAMED_TEST_PAYLOAD_AND_UNKNOWN_PRICE_NOTICE_FOR_APPROVAL",
+    "action": "SELECT_THE_NEXT_NAMED_PRODUCTION_JOB_AND_REQUEST_FRESH_APPROVAL",
+    "task_192751_approval_status": "CONSUMED_CANNOT_AUTHORIZE_RETRY_OR_NEW_TASK",
     "required_before_any_paid_call": [
-      "Present the final payload, unknown-price notice, and generation count to the user.",
-      "Obtain explicit approval for one named submission."
+      "Present the next exact payload, model, resolution, duration, generation count, and unknown-price notice to the user.",
+      "Obtain fresh explicit approval for that one named submission."
     ]
   }
 }
-
